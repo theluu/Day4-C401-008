@@ -1,5 +1,50 @@
 # Day 04 Lab v2 — Research Agent Tool Eval
 
+---
+
+## Phần A — Giới thiệu Agent
+
+### A1. Agent này làm được gì
+
+Research agent: nhận yêu cầu tìm kiếm theo từ khóa, đọc URL, tra Wikipedia/arXiv/Twitter, tổng hợp kết quả thành digest Markdown, và gửi lên Telegram hoặc Email sau khi người dùng xác nhận.
+
+### Link dùng thử (deploy)
+
+> Dán link public tại đây sau khi deploy (Streamlit Cloud / Cloudflare Tunnel / Vercel).
+
+URL: _(chưa deploy)_
+
+---
+
+### A2. Tool agent có
+
+| Tên tool | Làm được gì | Tool mới nhóm thêm? |
+|---|---|:---:|
+| `clarify` | Hỏi lại người dùng khi thiếu thông tin hoặc cần xác nhận trước khi gửi | không |
+| `timeline` | Lấy tweet gần đây của một tài khoản Twitter/X theo handle | không |
+| `social_search` | Tìm bài đăng theo từ khóa/xu hướng trên Twitter/X | không |
+| `lookup` | Tìm kiếm web tổng hợp hoặc tin tức thời sự (có `topic` + `timeframe`) | không |
+| `fetch` | Đọc nội dung toàn văn của một URL | không |
+| `format` | Trình bày kết quả thành digest Markdown theo template | không |
+| `send` | Gửi bản tin lên Telegram channel (chỉ khi `confirmed=true`) | không |
+| `policy` | Tra cứu chính sách nội bộ công ty theo nhóm chủ đề | không |
+| `papers` | Tìm bài báo khoa học trên arXiv | không |
+| `paper_text` | Tải và trích xuất văn bản từ một bài báo arXiv | không |
+| `wikipedia` | Tìm tóm tắt bài viết Wikipedia cho một chủ đề | **có** |
+| `email` | Gửi email đến người nhận (chỉ khi `confirmed=true`) | **có** |
+
+---
+
+### A3. Câu hỏi mẫu để thử
+
+1. `Tìm thông tin về trí tuệ nhân tạo trên Wikipedia.`
+2. `Tin AI hôm nay có gì mới?`
+3. `Sam Altman đang tweet gì?`
+4. `Tóm tắt bài viết này giúp mình: https://openai.com/blog/gpt-5`
+5. `Tìm paper về transformer architecture trên arXiv, sau đó gửi kết quả qua email cho tôi.`
+
+---
+
 ## Brief
 
 Trong lab này, nhóm build một research agent nhỏ nhưng chạy thật. Agent nhận request của user, chọn tool, truyền arguments, chạy tool thật, lưu full JSON log, rồi dùng log đó để tối ưu prompt/tool declaration qua nhiều version.
@@ -125,6 +170,19 @@ python scripts/preflight_provider.py --provider openrouter
 ```
 
 If preflight fails, fix provider key, dependency, or network before running eval.
+
+## Chạy UI (Streamlit)
+
+Sau khi setup xong, chạy Streamlit app:
+
+```bash
+cd starter_v0
+streamlit run app.py
+```
+
+Mở trình duyệt tại `http://localhost:8501`. Chọn provider và version, gõ câu hỏi, agent sẽ gọi tool và trả kết quả trực tiếp trong UI.
+
+> **Lưu ý:** Cần `.env` hợp lệ với ít nhất `OPENAI_API_KEY` hoặc `OPENROUTER_API_KEY`. Xem phần Setup ở trên.
 
 ## Step 1 — Run Baseline
 
