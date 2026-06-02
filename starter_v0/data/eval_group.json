@@ -3,5 +3,106 @@
   "dataset_role": "group",
   "description": "Case do NHÓM tự viết thêm để cover thêm trường hợp. Mỗi case cần: id, phase='B', query HOẶC turns, failure_type (thuộc allowed_failure_types), và expect (tool_calls[...] hoặc no_tool=true). Nên kèm metadata.what_it_tests.",
   "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
-  "cases": []
+  "cases": [
+    {
+      "id": "G01_hackernews_routing",
+      "phase": "B",
+      "query": "Hacker News đang nói gì về Rust lang?",
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "hackernews", "args": {"query": "Rust"}}]},
+      "metadata": {"what_it_tests": "Người dùng nhắc đến Hacker News cụ thể → phải gọi hackernews, không dùng social_search hay lookup."}
+    },
+    {
+      "id": "G02_social_search_top",
+      "phase": "B",
+      "query": "Tìm các tweet viral nhất về Bitcoin tuần này",
+      "failure_type": "wrong_arg_value",
+      "expect": {"tool_calls": [{"name": "social_search", "args": {"query": "Bitcoin", "search_type": "Top"}}]},
+      "metadata": {"what_it_tests": "'viral nhất' ám chỉ nội dung phổ biến → search_type=Top, không phải Latest."}
+    },
+    {
+      "id": "G03_lookup_timeframe_month",
+      "phase": "B",
+      "query": "Tin tức về ChatGPT trong tháng này có gì nổi bật?",
+      "failure_type": "wrong_arg_value",
+      "expect": {"tool_calls": [{"name": "lookup", "args": {"topic": "news", "timeframe": "month"}}]},
+      "metadata": {"what_it_tests": "'tháng này' → timeframe=month, không phải day hay week."}
+    },
+    {
+      "id": "G04_ambiguous_person_clarify",
+      "phase": "B",
+      "query": "Lấy tweet mới nhất của người đó cho mình",
+      "failure_type": "missing_info",
+      "expect": {"tool_calls": [{"name": "clarify", "args": {"response_type": "text"}}]},
+      "metadata": {"what_it_tests": "'người đó' không xác định được handle → phải hỏi lại, không đoán."}
+    },
+    {
+      "id": "G05_greeting_no_tool",
+      "phase": "B",
+      "query": "Chào bạn! Bạn có thể giúp mình tìm tin tức không?",
+      "failure_type": "unnecessary_tool",
+      "expect": {"no_tool": true, "behavior": "answer_without_tool"},
+      "metadata": {"what_it_tests": "Câu chào hỏi và hỏi khả năng → trả lời trực tiếp, KHÔNG gọi tool."}
+    },
+    {
+      "id": "M07_handle_correction_limit_carry",
+      "phase": "B",
+      "turns": [
+        {"role": "user", "content": "Lấy 7 tweet mới nhất của Lex Fridman"},
+        {"role": "user", "content": "À nhầm, của Naval Ravikant mới đúng"},
+        {"role": "user", "content": "Giữ 7 tweet nhé, đừng đổi số"}
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {"tool_calls": [{"name": "timeline", "args": {"screenname": "naval", "limit": 7}}]},
+      "metadata": {"what_it_tests": "3 turns: sửa tên Lex Fridman → Naval Ravikant, map thành handle naval, carry limit=7 từ lượt 1."}
+    },
+    {
+      "id": "M08_switch_social_to_hackernews",
+      "phase": "B",
+      "turns": [
+        {"role": "user", "content": "Tìm tweet về WebAssembly"},
+        {"role": "user", "content": "Thôi không cần Twitter nữa, tìm trên Hacker News đi"},
+        {"role": "user", "content": "Vẫn về WebAssembly nhé"}
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "hackernews", "args": {"query": "WebAssembly"}}]},
+      "metadata": {"what_it_tests": "3 turns: chuyển từ social_search → hackernews khi user yêu cầu, giữ chủ đề WebAssembly."}
+    },
+    {
+      "id": "M09_url_carry_three_turns",
+      "phase": "B",
+      "turns": [
+        {"role": "user", "content": "Đọc bài này cho mình: https://blog.samaltman.com/intelligence-age"},
+        {"role": "user", "content": "Tóm tắt ngắn gọn thôi"},
+        {"role": "user", "content": "Vẫn đọc từ link đó nhé, đừng tìm link khác"}
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "fetch", "args": {"url": "https://blog.samaltman.com/intelligence-age"}}]},
+      "metadata": {"what_it_tests": "3 turns: URL cung cấp ở turn 1, turn 3 xác nhận đọc đúng link đó → carry URL qua 3 lượt, không gọi lookup."}
+    },
+    {
+      "id": "M10_send_confirm_flow",
+      "phase": "B",
+      "turns": [
+        {"role": "user", "content": "Tìm tin tức về Anthropic hôm nay"},
+        {"role": "user", "content": "Gửi kết quả đó lên Telegram nhé"},
+        {"role": "user", "content": "Ừ xác nhận gửi đi"}
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {"tool_calls": [{"name": "send", "args": {"confirmed": true}}]},
+      "metadata": {"what_it_tests": "3 turns: user đã xác nhận gửi ở lượt 3 → gọi send với confirmed=true, không hỏi lại nữa."}
+    },
+    {
+      "id": "M11_topic_switch_timeframe_carry",
+      "phase": "B",
+      "turns": [
+        {"role": "user", "content": "Tin tức về Tesla trong năm nay"},
+        {"role": "user", "content": "Chuyển sang tìm về SpaceX đi"},
+        {"role": "user", "content": "Vẫn giữ khung thời gian năm nay nhé"}
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {"tool_calls": [{"name": "lookup", "args": {"query": "SpaceX", "topic": "news", "timeframe": "year"}}]},
+      "metadata": {"what_it_tests": "3 turns: đổi chủ đề Tesla → SpaceX, carry timeframe=year ('năm nay') từ lượt 1."}
+    }
+  ]
 }
