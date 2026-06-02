@@ -1,0 +1,15 @@
+{
+  "transcript_id": "v0_openai_20260602T160348538920",
+  "provider": "openai",
+  "created_at": "2026-06-02T16:03:48",
+  "updated_at": "2026-06-02T16:12:13",
+  "turns": [
+    {
+      "turn_index": 1,
+      "user": "Hôm nay là thứ mấy?",
+      "assistant_text": "Tôi không thể cung cấp thông tin về ngày tháng hoặc thời gian hiện tại. Bạn có thể kiểm tra trên thiết bị của mình để biết hôm nay là thứ mấy.",
+      "tool_events": [],
+      "status": "answered"
+    }
+  ]
+}

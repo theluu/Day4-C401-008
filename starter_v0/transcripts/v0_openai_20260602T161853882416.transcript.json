@@ -1,0 +1,150 @@
+{
+  "transcript_id": "v0_openai_20260602T161853882416",
+  "provider": "openai",
+  "created_at": "2026-06-02T16:18:53",
+  "updated_at": "2026-06-02T16:21:32",
+  "turns": [
+    {
+      "turn_index": 1,
+      "user": "Tin tức AI hôm nay",
+      "assistant_text": "Here are the latest news articles about AI:\n\n1. **[AI expected to drive £18bn of UK digital ad spend by 2030](https://www.marketingweek.com/iab-uk-ai-ad-spend/)** - Marketing Week  \n   AI is projected to account for one-third of the UK's digital ad spend by 2030, amounting to approximately £18 billion. This forecast comes from IAB UK, which highlights the influence of AI in areas such as content creation and media buying.\n\n2. **[40% of executives thought AI could save up to 20%. It didn’t deliver.](https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver)** - PitchBook  \n   A Bain report reveals that many companies are increasing their AI budgets despite not seeing significant productivity gains. Only 40% of companies reported cost savings of less than 10% from their AI initiatives.\n\n3. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)** - The Washington Post  \n   This article discusses an ad campaign by the AI safety group Americans for Responsible Innovation, which criticizes Rep. Lori Trahan for her legislative efforts regarding AI regulation.\n\n4. **[AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says](https://www.insurancejournal.com/news/national/2026/06/01/871951.htm)** - Insurance Journal  \n   Bain's report indicates that missed savings targets in AI investments should concern executives, especially as many are increasing their spending based on expected savings.\n\n5. **[New Report: The AI Rebuild of Travel](https://skift.com/insights/the-ai-rebuild-of-travel/)** - Skift  \n   This report discusses how AI is transforming the travel industry, affecting how trips are discovered, booked, and managed, and emphasizes the need for infrastructure to keep pace with these changes.\n\nFeel free to ask if you need more information on any specific article!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.80069196
+              },
+              {
+                "title": "40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook",
+                "url": "https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver",
+                "source": "pitchbook.com",
+                "summary": "## The gap between AI spending and productivity gains “should be making executives uncomfortable,” a Bain report found. Corporates are beefing up their AI budgets but seeing lackluster productivity gains, according to the latest Bain & Company report. Bain’s Automation and AI Pathfinder Survey 2026, which had 951 respondents, found that 40% of the companies that tracked their spending recorded cost savings of less than 10% from their AI initiatives. Still, 90% of those surveyed whose AI investments underdelivered plan to increase their AI budgets next year. As compute and usage costs have risen dramatically, executives and shareholders are taking a closer look at the returns that those investments have brought so far. A PitchBook analysis of 186 AI-related questions on B2C earnings calls found that 90% were probing and investigative in tone, and that ROI and financial returns have overtaken product roadmaps as the dominant focus. Employees’ use of AI tools can range from coding assistants to AI-generated research to organizing unstructured databases.",
+                "score": 0.26990628
+              },
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.8749346
+              },
+              {
+                "title": "AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal",
+                "url": "https://www.insurancejournal.com/news/national/2026/06/01/871951.htm",
+                "source": "insurancejournal.com",
+                "summary": "The missed targets “should be making executives uncomfortable,” especially since many of them are approving increased spending for artificial intelligence on the basis of expected savings, the consulting firm said in a report shared exclusively with Bloomberg News. While some companies are funding fresh investment in generative and agentic AI with realized savings, the largest share (44%) cited targeted savings among their top sources of funding for the next wave of outlays, according to the report. “Despite a decade of investments in data modernization running well into hundreds of billions of dollars globally, the No. 1 reason AI programs underperform is that companies cannot reliably get access to their own data,” Bain said. Its prescription: Instead of waiting to structure all of their data to make it ingestible by AI, companies should start with what’s available to feed into the models — and then use AI to help sort out how to structure the rest.",
+                "score": 0.22715242
+              },
+              {
+                "title": "New Report: The AI Rebuild of Travel - Skift",
+                "url": "https://skift.com/insights/the-ai-rebuild-of-travel/",
+                "source": "skift.com",
+                "summary": "# New Report: The AI Rebuild of Travel. Travel technology is being rebuilt in real time as AI begins to shape how trips are discovered, booked, and managed. And systems built for websites and manual workflows are struggling to keep pace with a more connected, autonomous future. What once operated as a predictable digital journey is becoming an AI-mediated ecosystem powered by real-time data, interoperability, and increasingly intelligent systems. Skift Studio spoke with 10 senior technology, product, and digital leaders across airlines, hospitality companies, travel platforms, and technology providers to understand how the industry is preparing. One thing is clear: the next era of travel will be defined by infrastructure as much as interface. **Download the report to learn:**. * How AI assistants and agentic experiences are reshaping travel discovery and booking. * Why trust, governance, and identity are becoming central to AI-powered travel. * How airlines, hotels, and platforms are preparing for a more autonomous future.",
+                "score": 0.20429464
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 2,
+      "user": "Tin tức trên tweeter",
+      "assistant_text": "Here are the latest tweets related to AI:\n\n1. **[@ytadamdang68](https://x.com/ytadamdang68/status/2061739926027424214)**  \n   *Tự nhiên muốn bạo dâm quá. Kiểu vừa bị trói vừa nắc á. Xong anh thì bú lồn em rồi nắc con cu bự của anh vô miệng em tới tràng nước ra luôn. Nghĩ tới thôi là nứng không chịu nỗi rồi. Aaaa có ai thích thể loại đó hong, chim em ước nhẹp nữa rồi*  \n   Date: Tue Jun 02 09:21:18 +0000 2026\n\n2. **[@funi_noiroiro](https://x.com/funi_noiroiro/status/2061739920851685522)**  \n   *絵を描かない人たちが、簡単な絵（に見えるもの）で商業化してるものに不快感を示す現象と、あまりにも外見に頓着していない女の人がメインに出てるネット広告に不快感を感じる現象、似たような心理、みたいな話をAIとしました*  \n   Date: Tue Jun 02 09:21:17 +0000 2026\n\n3. **[@AbcpokerBI](https://x.com/AbcpokerBI/status/2061739916254470409)**  \n   *Bra podd om AI och Amerikansk tech 🇺🇸*  \n   Date: Tue Jun 02 09:21:15 +0000 2026\n\n4. **[@qqopenclaw](https://x.com/qqopenclaw/status/2061739913234857999)**  \n   *한국 소버린 AI 밸류체인: 반도체부터 전력기기까지 16개 기업 분석. 국내 인공지능 생태계의 기술 주권을 지키는 16개 핵심 기업이 각 분야에서 독보적인 포지션을 구축하며 외산 기술 의존도를 낮추고 있어요.*  \n   Date: Tue Jun 02 09:21:15 +0000 2026\n\n5. **[@Victorin_ox](https://x.com/Victorin_ox/status/2061739912781595016)**  \n   *@ActionModelAI @BernieSanders Yeah, Exactly. AI ownership should be global, not gated by borders or controlled by a few giants. A fair AI future means everyone who helps build and train these systems deserves a stake in the value created.*  \n   Date: Tue Jun 02 09:21:15 +0000 2026\n\nIf you need more details or specific topics, let me know!",
+      "tool_events": [
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "AI",
+            "search_type": "Latest",
+            "limit": 5
+          },
+          "result": {
+            "tool": "search_tweets",
+            "query": "AI",
+            "search_type": "Latest",
+            "items": [
+              {
+                "title": "Tự nhiên muốn bạo dâm quá. Kiểu vừa bị trói vừa nắc á. Xong anh thì bú lồn em rồi nắc con cu bự của anh vô miệng em tới ",
+                "summary": "Tự nhiên muốn bạo dâm quá. Kiểu vừa bị trói vừa nắc á. Xong anh thì bú lồn em rồi nắc con cu bự của anh vô miệng em tới tràng nước ra luôn. Nghĩ tới thôi là nứng không chịu nỗi rồi. Aaaa có ai thích thể loại đó hong, chim em ước nhẹp nữa rồi\n#cantho",
+                "url": "https://x.com/ytadamdang68/status/2061739926027424214",
+                "source": "@ytadamdang68",
+                "date": "Tue Jun 02 09:21:18 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "絵を描かない人たちが、簡単な絵（に見えるもの）で商業化してるものに不快感を示す現象と、",
+                "summary": "絵を描かない人たちが、簡単な絵（に見えるもの）で商業化してるものに不快感を示す現象と、\nあまりにも外見に頓着していない女の人がメインに出てるネット広告に不快感を感じる現象、\n似たような心理、みたいな話をAIとしました",
+                "url": "https://x.com/funi_noiroiro/status/2061739920851685522",
+                "source": "@funi_noiroiro",
+                "date": "Tue Jun 02 09:21:17 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "Bra podd om AI och Amerikansk tech 🇺🇸 https://t.co/YINw6uIveR",
+                "summary": "Bra podd om AI och Amerikansk tech 🇺🇸 https://t.co/YINw6uIveR",
+                "url": "https://x.com/AbcpokerBI/status/2061739916254470409",
+                "source": "@AbcpokerBI",
+                "date": "Tue Jun 02 09:21:15 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "한국 소버린 AI 밸류체인: 반도체부터 전력기기까지 16개 기업 분석",
+                "summary": "한국 소버린 AI 밸류체인: 반도체부터 전력기기까지 16개 기업 분석\n\nhttps://t.co/aad6TMvjWy\n\n국내 인공지능 생태계의 기술 주권을 지키는 16개 핵심 기업이 각 분야에서 독보적인 포지션을 구축하며 외산 기술 의존도를 낮추고 있어요. 인프라 구축의 핵심 동력인 전력기기 3사의 합산 수주 잔고는 2026년 1분기 기준 전력기기 부문에서만 32조 원을 돌파하며 역대 최대치를 갈아치운 상태에요. 단순한 소프트웨어 경쟁을 넘어 반도체와 에너지 공급망까지 아우르는 거대한 하드웨어 전쟁이 시작된 셈이에요...",
+                "url": "https://x.com/qqopenclaw/status/2061739913234857999",
+                "source": "@qqopenclaw",
+                "date": "Tue Jun 02 09:21:15 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "@ActionModelAI @BernieSanders Yeah, Exactly. AI ownership should be global, not gated by borders or controlled by a few ",
+                "summary": "@ActionModelAI @BernieSanders Yeah, Exactly. AI ownership should be global, not gated by borders or controlled by a few giants. A fair AI future means everyone who helps build and train these systems deserves a stake in the value created.",
+                "url": "https://x.com/Victorin_ox/status/2061739912781595016",
+                "source": "@Victorin_ox",
+                "date": "Tue Jun 02 09:21:15 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    }
+  ]
+}

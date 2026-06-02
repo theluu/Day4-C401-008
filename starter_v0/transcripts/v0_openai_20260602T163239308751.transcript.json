@@ -1,0 +1,154 @@
+{
+  "transcript_id": "v0_openai_20260602T163239308751",
+  "provider": "openai",
+  "created_at": "2026-06-02T16:32:39",
+  "updated_at": "2026-06-02T16:36:36",
+  "turns": [
+    {
+      "turn_index": 1,
+      "user": "Tin tức AI hôm nay là gì?",
+      "assistant_text": "Here are the latest news articles about AI:\n\n1. **[AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week](https://www.marketingweek.com/iab-uk-ai-ad-spend/)**\n   - AI is projected to account for one-third of the UK's digital ad spend by 2030, amounting to approximately £18 billion. This growth is attributed to the adoption of AI tools in media buying and content creation.\n\n2. **[40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook](https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver)**\n   - A Bain report reveals that many companies are increasing their AI budgets despite not seeing significant productivity gains. Only 40% of companies reported cost savings of less than 10% from their AI initiatives.\n\n3. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)**\n   - An AI safety group has launched an ad campaign against Rep. Lori Trahan, criticizing her legislative efforts regarding AI. The article also discusses Nvidia's new developments in AI technology.\n\n4. **[AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal](https://www.insurancejournal.com/news/national/2026/06/01/871951.htm)**\n   - A report highlights that missed savings targets in AI investments are causing concern among executives, especially as many are increasing their spending based on expected savings.\n\n5. **[New Report: The AI Rebuild of Travel - Skift](https://skift.com/insights/the-ai-rebuild-of-travel/)**\n   - The travel industry is undergoing significant changes due to AI, affecting how trips are discovered and booked. The report discusses the need for infrastructure to keep pace with AI advancements in travel.\n\nFeel free to ask if you need more information on any specific article!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.80069196
+              },
+              {
+                "title": "40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook",
+                "url": "https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver",
+                "source": "pitchbook.com",
+                "summary": "## The gap between AI spending and productivity gains “should be making executives uncomfortable,” a Bain report found. Corporates are beefing up their AI budgets but seeing lackluster productivity gains, according to the latest Bain & Company report. Bain’s Automation and AI Pathfinder Survey 2026, which had 951 respondents, found that 40% of the companies that tracked their spending recorded cost savings of less than 10% from their AI initiatives. Still, 90% of those surveyed whose AI investments underdelivered plan to increase their AI budgets next year. As compute and usage costs have risen dramatically, executives and shareholders are taking a closer look at the returns that those investments have brought so far. A PitchBook analysis of 186 AI-related questions on B2C earnings calls found that 90% were probing and investigative in tone, and that ROI and financial returns have overtaken product roadmaps as the dominant focus. Employees’ use of AI tools can range from coding assistants to AI-generated research to organizing unstructured databases.",
+                "score": 0.26990628
+              },
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.8749346
+              },
+              {
+                "title": "AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal",
+                "url": "https://www.insurancejournal.com/news/national/2026/06/01/871951.htm",
+                "source": "insurancejournal.com",
+                "summary": "The missed targets “should be making executives uncomfortable,” especially since many of them are approving increased spending for artificial intelligence on the basis of expected savings, the consulting firm said in a report shared exclusively with Bloomberg News. While some companies are funding fresh investment in generative and agentic AI with realized savings, the largest share (44%) cited targeted savings among their top sources of funding for the next wave of outlays, according to the report. “Despite a decade of investments in data modernization running well into hundreds of billions of dollars globally, the No. 1 reason AI programs underperform is that companies cannot reliably get access to their own data,” Bain said. Its prescription: Instead of waiting to structure all of their data to make it ingestible by AI, companies should start with what’s available to feed into the models — and then use AI to help sort out how to structure the rest.",
+                "score": 0.22715242
+              },
+              {
+                "title": "New Report: The AI Rebuild of Travel - Skift",
+                "url": "https://skift.com/insights/the-ai-rebuild-of-travel/",
+                "source": "skift.com",
+                "summary": "# New Report: The AI Rebuild of Travel. Travel technology is being rebuilt in real time as AI begins to shape how trips are discovered, booked, and managed. And systems built for websites and manual workflows are struggling to keep pace with a more connected, autonomous future. What once operated as a predictable digital journey is becoming an AI-mediated ecosystem powered by real-time data, interoperability, and increasingly intelligent systems. Skift Studio spoke with 10 senior technology, product, and digital leaders across airlines, hospitality companies, travel platforms, and technology providers to understand how the industry is preparing. One thing is clear: the next era of travel will be defined by infrastructure as much as interface. **Download the report to learn:**. * How AI assistants and agentic experiences are reshaping travel discovery and booking. * Why trust, governance, and identity are becoming central to AI-powered travel. * How airlines, hotels, and platforms are preparing for a more autonomous future.",
+                "score": 0.20429464
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 2,
+      "user": "Sam Altman tweeted gì gần đây?",
+      "assistant_text": "Here are the recent tweets from Sam Altman:\n\n1. **[The OpenAI Foundation is doing a lot of wonderful things.](https://x.com/sama/status/2061562575322492937)**  \n   *Date:* Mon Jun 01 21:36:34 +0000 2026  \n   *Summary:* Helping society become resilient to AI is going to be incredibly important. Much more to come here!  \n   *Likes:* 1757 | *Retweets:* 140 | *Views:* 253,183\n\n2. **[OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.](https://x.com/sama/status/2061117302528188712)**  \n   *Date:* Sun May 31 16:07:13 +0000 2026  \n   *Summary:* AI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.  \n   *Likes:* 12,968 | *Retweets:* 1026 | *Views:* 2,764,339\n\n3. **[We want to help the world get a head start on biodefense:](https://x.com/sama/status/2061101875303530871)**  \n   *Date:* Sun May 31 15:05:55 +0000 2026  \n   *Summary:* [Link to more information](https://t.co/gDQfOZrLA4)  \n   *Likes:* 1542 | *Retweets:* 176 | *Views:* 240,258\n\n4. **[RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.](https://x.com/sama/status/2061097558819356732)**  \n   *Date:* Sun May 31 14:48:46 +0000 2026  \n   *Summary:* Time to go /fast  \n   *Likes:* 0 | *Retweets:* 378 | *Views:* 33\n\n5. **[AI should dramatically increase quality of life and individual freedoms for people around the world.](https://x.com/sama/status/2059677202917331431)**  \n   *Date:* Wed May 27 16:44:46 +0000 2026  \n   *Summary:* The OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.  \n   *Likes:* 4361 | *Retweets:* 403 | *Views:* 487,576\n\nIf you need more details or specific information, feel free to ask!",
+      "tool_events": [
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "sama"
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "date": "Mon Jun 01 21:36:34 +0000 2026",
+                "metrics": {
+                  "favorites": 1757,
+                  "retweets": 140,
+                  "views": "253183"
+                }
+              },
+              {
+                "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us progra",
+                "summary": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.\n\nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.\n\nOur world simulation research program, led by Aditya Ramesh (@model_mechanic), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.\n\nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting@openai.com",
+                "url": "https://x.com/sama/status/2061117302528188712",
+                "source": "@sama",
+                "date": "Sun May 31 16:07:13 +0000 2026",
+                "metrics": {
+                  "favorites": 12968,
+                  "retweets": 1026,
+                  "views": "2764339"
+                }
+              },
+              {
+                "title": "We want to help the world get a head start on biodefense:",
+                "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+                "url": "https://x.com/sama/status/2061101875303530871",
+                "source": "@sama",
+                "date": "Sun May 31 15:05:55 +0000 2026",
+                "metrics": {
+                  "favorites": 1542,
+                  "retweets": 176,
+                  "views": "240258"
+                }
+              },
+              {
+                "title": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.",
+                "summary": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+                "url": "https://x.com/sama/status/2061097558819356732",
+                "source": "@sama",
+                "date": "Sun May 31 14:48:46 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 378,
+                  "views": "33"
+                }
+              },
+              {
+                "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                "summary": "AI should dramatically increase quality of life and individual freedoms for people around the world.\n\nThe OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.\n\nhttps://t.co/zOD8O94RjQ",
+                "url": "https://x.com/sama/status/2059677202917331431",
+                "source": "@sama",
+                "date": "Wed May 27 16:44:46 +0000 2026",
+                "metrics": {
+                  "favorites": 4361,
+                  "retweets": 403,
+                  "views": "487576"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 3,
+      "user": " Làm thế nào để nấu phở bò ngon?",
+      "assistant_text": "Xin lỗi, nhưng tôi không thể giúp bạn với các công thức nấu ăn hoặc hướng dẫn nấu ăn. Tuy nhiên, tôi có thể cung cấp thông tin về các chủ đề khác hoặc tìm kiếm tin tức liên quan đến ẩm thực nếu bạn muốn!",
+      "tool_events": [],
+      "status": "answered"
+    }
+  ]
+}

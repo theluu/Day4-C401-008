@@ -1,0 +1,595 @@
+{
+  "transcript_id": "v0_openai_20260602T164828102884",
+  "provider": "openai",
+  "created_at": "2026-06-02T16:48:28",
+  "updated_at": "2026-06-02T16:55:51",
+  "turns": [
+    {
+      "turn_index": 1,
+      "user": "Tin tức AI hôm nay là gì?",
+      "assistant_text": "Here are the latest news articles about AI:\n\n1. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)** - The Washington Post\n   - AI safety group Americans for Responsible Innovation has launched a six-figure ad campaign against Rep. Lori Trahan, arguing she supports AI oligarchs. Nvidia is also rolling out a new simulator for robots.\n\n2. **[OpenAI Is Latest Tech Company In The Litigation Hot Seat](https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/)** - Above the Law\n   - OpenAI is facing legal challenges as the tech industry grapples with unanswered questions regarding AI and its implications.\n\n3. **[Sam Altman Says AI-Adopting Companies Are Hiring](https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62)** - Let's Data Science\n   - OpenAI CEO Sam Altman stated that companies adopting AI are also the ones hiring the most, countering claims that AI is a reason for layoffs.\n\n4. **[AI expected to drive £18bn of UK digital ad spend by 2030](https://www.marketingweek.com/iab-uk-ai-ad-spend/)** - Marketing Week\n   - IAB UK forecasts that AI will account for one-third of the UK's digital ad spend by 2030, influencing areas like content creation and media buying.\n\n5. **[DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search](https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html)** - TweakTown\n   - Following Google's AI-driven search update, DuckDuckGo has seen a surge in traffic to its no-AI search page and has launched new browser extensions to cater to users preferring an AI-free search experience.\n\nFeel free to ask if you need more information on any specific article!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.8749346
+              },
+              {
+                "title": "OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law",
+                "url": "https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/",
+                "source": "abovethelaw.com",
+                "summary": "# OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law. Open navigationAbove the LawToggle Search. # OpenAI Is Latest Tech Company In The Litigation Hot Seat. ## More from Above the Law. ## From the Above the Law Network. Image 6: AI Artificial Intelligence (AI) Eve Legal Legal Tech Sponsored Content Technology. Image 7: Legal and operational leaders are gathering May 6–7 in Fort Lauderdale to confront the questions the industry hasn't answered—with a keynote from Amanda Knox setting the tone. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.",
+                "score": 0.86339164
+              },
+              {
+                "title": "Sam Altman Says AI-Adopting Companies Are Hiring - Let's Data Science",
+                "url": "https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62",
+                "source": "letsdatascience.com",
+                "summary": "Business Insider reports that OpenAI CEO Sam Altman told CNBC on June 1, 2026, that \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman saying companies that publicly cite AI as a reason for layoffs tend to be adopting AI the least, and that AI can be a \"convenient way\" to explain layoffs. Business Insider reports that OpenAI CEO **Sam Altman** told CNBC on June 1, 2026, \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman as saying that companies publicly citing AI as a reason for layoffs \"are the ones adopting AI the least,\" and that AI can be a \"convenient way\" for companies to explain layoffs. Business Insider also lists recent layoffs at several tech companies and cites a March Pew Research Center poll that found elevated public concern about AI.",
+                "score": 0.81286734
+              },
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.80069196
+              },
+              {
+                "title": "DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search - TweakTown",
+                "url": "https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html",
+                "source": "tweaktown.com",
+                "summary": "# DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search. ## Traffic to DuckDuckGo's no-AI search page tripled after Google's overhaul, and the company is now making it even easier to ditch AI search entirely. **TL;DR:** Following Google's major AI-driven Search update, many users have shifted to DuckDuckGo, whose no-AI search traffic tripled and app installs surged. However, a significant number of users have pushed back against the **AI-heavy** direction and, in the process, many have ended up at DuckDuckGo. Traffic to DuckDuckGo's No AI search page tripled after Google's announcement and has continued to surge. To keep the momentum going, the company has now launched new browser extensions for Chrome and Firefox that let users set its AI-free search page, noai.duckduckgo.com, as their default search engine. From there, the Duck.ai chatbot can be disabled entirely, and the app can be set to open with a plain search interface by default every time.",
+                "score": 0.7520126
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 2,
+      "user": "Sam Altman tweeted gì gần đây?",
+      "assistant_text": "Here are Sam Altman's recent tweets:\n\n1. **[The OpenAI Foundation is doing a lot of wonderful things.](https://x.com/sama/status/2061562575322492937)**  \n   *Date:* Mon Jun 01 21:36:34 +0000 2026  \n   *Summary:* Helping society become resilient to AI is going to be incredibly important. Much more to come here!  \n   *Likes:* 1774 | *Retweets:* 142 | *Views:* 255,581\n\n2. **[OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.](https://x.com/sama/status/2061117302528188712)**  \n   *Date:* Sun May 31 16:07:13 +0000 2026  \n   *Summary:* AI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.  \n   *Likes:* 12,973 | *Retweets:* 1026 | *Views:* 2,766,317\n\n3. **[We want to help the world get a head start on biodefense:](https://x.com/sama/status/2061101875303530871)**  \n   *Date:* Sun May 31 15:05:55 +0000 2026  \n   *Summary:* [Link to more information](https://t.co/gDQfOZrLA4)  \n   *Likes:* 1543 | *Retweets:* 176 | *Views:* 240,454\n\n4. **[RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.](https://x.com/sama/status/2061097558819356732)**  \n   *Date:* Sun May 31 14:48:46 +0000 2026  \n   *Summary:* Time to go /fast  \n   *Likes:* 0 | *Retweets:* 378 | *Views:* 33\n\n5. **[AI should dramatically increase quality of life and individual freedoms for people around the world.](https://x.com/sama/status/2059677202917331431)**  \n   *Date:* Wed May 27 16:44:46 +0000 2026  \n   *Summary:* The OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.  \n   *Likes:* 4362 | *Retweets:* 403 | *Views:* 487,624\n\nIf you need more details or specific information, feel free to ask!",
+      "tool_events": [
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "sama"
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "date": "Mon Jun 01 21:36:34 +0000 2026",
+                "metrics": {
+                  "favorites": 1774,
+                  "retweets": 142,
+                  "views": "255581"
+                }
+              },
+              {
+                "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us progra",
+                "summary": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.\n\nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.\n\nOur world simulation research program, led by Aditya Ramesh (@model_mechanic), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.\n\nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting@openai.com",
+                "url": "https://x.com/sama/status/2061117302528188712",
+                "source": "@sama",
+                "date": "Sun May 31 16:07:13 +0000 2026",
+                "metrics": {
+                  "favorites": 12973,
+                  "retweets": 1026,
+                  "views": "2766317"
+                }
+              },
+              {
+                "title": "We want to help the world get a head start on biodefense:",
+                "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+                "url": "https://x.com/sama/status/2061101875303530871",
+                "source": "@sama",
+                "date": "Sun May 31 15:05:55 +0000 2026",
+                "metrics": {
+                  "favorites": 1543,
+                  "retweets": 176,
+                  "views": "240454"
+                }
+              },
+              {
+                "title": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.",
+                "summary": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+                "url": "https://x.com/sama/status/2061097558819356732",
+                "source": "@sama",
+                "date": "Sun May 31 14:48:46 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 378,
+                  "views": "33"
+                }
+              },
+              {
+                "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                "summary": "AI should dramatically increase quality of life and individual freedoms for people around the world.\n\nThe OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.\n\nhttps://t.co/zOD8O94RjQ",
+                "url": "https://x.com/sama/status/2059677202917331431",
+                "source": "@sama",
+                "date": "Wed May 27 16:44:46 +0000 2026",
+                "metrics": {
+                  "favorites": 4362,
+                  "retweets": 403,
+                  "views": "487624"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 3,
+      "user": "Mọi người đang bàn gì về ChatGPT trên Twitter?",
+      "assistant_text": "Here are the latest discussions about ChatGPT on Twitter:\n\n1. **[@Enfant2cayenne](https://x.com/Enfant2cayenne/status/2061747208915988900)**  \n   *Date:* Tue Jun 02 09:50:14 +0000 2026  \n   *Summary:* \"Bravo tu as utilisé chatgpt qui t'a dit n'importe quoi et tu y as cru c'est beau\" (Bravo, you used ChatGPT which told you nonsense and you believed it, it's beautiful).\n\n2. **[@holistiuc](https://x.com/holistiuc/status/2061747202683514914)**  \n   *Date:* Tue Jun 02 09:50:13 +0000 2026  \n   *Summary:* \"WTS WTB JUAL BELI APLIKASI PREMIUM MURAH DAN GARANSI\" (Selling and buying cheap premium applications with a guarantee, including ChatGPT).\n\n3. **[@special_bay_81](https://x.com/special_bay_81/status/2061747195494441359)**  \n   *Date:* Tue Jun 02 09:50:11 +0000 2026  \n   *Summary:* \"感想！AIに歌詞を読んでもらった感想！\" (Impressions! I had AI read the lyrics!).\n\n4. **[@luhdevainilla](https://x.com/luhdevainilla/status/2061747184068902961)**  \n   *Date:* Tue Jun 02 09:50:08 +0000 2026  \n   *Summary:* \"aveces uno solo ocupa decirle un par d cosas a chatgpt y ya bruuuh\" (Sometimes you just need to tell ChatGPT a couple of things and that's it).\n\n5. **[@CodeVinayak](https://x.com/CodeVinayak/status/2061747165001863504)**  \n   *Date:* Tue Jun 02 09:50:04 +0000 2026  \n   *Summary:* \"@JoePostingg Purchase gemini enterprise and ban chatgpt and other ai ip addresses that what my company did\".\n\nIf you need more details or specific information, feel free to ask!",
+      "tool_events": [
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "ChatGPT",
+            "search_type": "Latest",
+            "limit": 5
+          },
+          "result": {
+            "tool": "search_tweets",
+            "query": "ChatGPT",
+            "search_type": "Latest",
+            "items": [
+              {
+                "title": "@ash_69_666 @TheKikeMine77 @Karl98Kurz Bravo tu as utilisé chatgpt qui t'a dit n'importe quoi et tu y as cru c'est beau",
+                "summary": "@ash_69_666 @TheKikeMine77 @Karl98Kurz Bravo tu as utilisé chatgpt qui t'a dit n'importe quoi et tu y as cru c'est beau",
+                "url": "https://x.com/Enfant2cayenne/status/2061747208915988900",
+                "source": "@Enfant2cayenne",
+                "date": "Tue Jun 02 09:50:14 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "WTS WTB JUAL BELI APLIKASI PREMIUM MURAH DAN GARANSI",
+                "summary": "WTS WTB JUAL BELI APLIKASI PREMIUM MURAH DAN GARANSI\n\nADA NETFLIX YOUKU YOUTUBE HBO MAX CHATGPT CAPCUT CANVA VIDIO PLATINUM ZOOM WATPAD GRAMMARLY QUILLBOT WETV SCRIBD LOKLOK VIU DISNEY M365 BSTATION MEITU \n\nORDER  https://t.co/CHi5oNTdhu\n\n#zonauang a https://t.co/ivvKr7JMMM",
+                "url": "https://x.com/holistiuc/status/2061747202683514914",
+                "source": "@holistiuc",
+                "date": "Tue Jun 02 09:50:13 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "1"
+                }
+              },
+              {
+                "title": "⭐︎AIに歌詞を読んでもらった感想！",
+                "summary": "⭐︎AIに歌詞を読んでもらった感想！\n\n「海風」  -2017年 \n\n-----\n\n「ノスタルジー」と「希望」が\n同時に残る歌詞でした。\n\n青春や人生の節目を\n思い出させる、\n\n温かい応援歌になっていると\n思います。\n\n-ChatGPT 使用\n\n#オリジナルソング\n#歌詞\n#感想",
+                "url": "https://x.com/special_bay_81/status/2061747195494441359",
+                "source": "@special_bay_81",
+                "date": "Tue Jun 02 09:50:11 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "1"
+                }
+              },
+              {
+                "title": "aveces uno solo ocupa decirle un par d cosas a chatgpt y ya bruuuh",
+                "summary": "aveces uno solo ocupa decirle un par d cosas a chatgpt y ya bruuuh",
+                "url": "https://x.com/luhdevainilla/status/2061747184068902961",
+                "source": "@luhdevainilla",
+                "date": "Tue Jun 02 09:50:08 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "1"
+                }
+              },
+              {
+                "title": "@JoePostingg Purchase gemini enterprise and ban chatgpt and other ai ip addresses that what my company did",
+                "summary": "@JoePostingg Purchase gemini enterprise and ban chatgpt and other ai ip addresses that what my company did",
+                "url": "https://x.com/CodeVinayak/status/2061747165001863504",
+                "source": "@CodeVinayak",
+                "date": "Tue Jun 02 09:50:04 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 4,
+      "user": "Tóm tắt bài viết này: https://openai.com/blog/gpt-4",
+      "assistant_text": "Here’s a summary of the article about GPT-4 from OpenAI:\n\n### GPT-4 Overview\n- **Release**: GPT-4 is OpenAI’s most advanced language model, designed to produce safer and more useful responses compared to its predecessors.\n- **Improvements**: It is 82% less likely to respond to disallowed content and 40% more likely to provide factual responses than GPT-3.5.\n\n### Key Features\n- **Safety & Alignment**: \n  - Enhanced through human feedback, including input from ChatGPT users and over 50 experts in AI safety.\n  - Continuous improvement based on real-world usage and feedback.\n  - Utilizes its advanced reasoning capabilities to assist in safety research and model fine-tuning.\n\n### Applications\n- GPT-4 is being integrated into various applications, including:\n  - **Duolingo**: Enhances language learning experiences.\n  - **Be My Eyes**: Improves visual accessibility.\n  - **Stripe**: Streamlines user experience and combats fraud.\n  - **Morgan Stanley**: Organizes vast knowledge bases for wealth management.\n\n### Limitations\n- Despite its advancements, GPT-4 still faces challenges such as social biases, hallucinations, and adversarial prompts. OpenAI emphasizes the importance of transparency and user education.\n\n### Availability\n- GPT-4 is accessible through ChatGPT Plus and as an API for developers.\n\nFor more details, you can read the full article [here](https://openai.com/blog/gpt-4).",
+      "tool_events": [
+        {
+          "tool": "fetch",
+          "args": {
+            "url": "https://openai.com/blog/gpt-4"
+          },
+          "result": {
+            "tool": "read_url",
+            "url": "https://openai.com/blog/gpt-4",
+            "items": [
+              {
+                "title": "GPT-4 | OpenAI",
+                "url": "https://openai.com/blog/gpt-4",
+                "source": "openai.com",
+                "summary": "GPT-4 \\| OpenAI\n\n[Release](https://openai.com/research/index/release/)\n\n# GPT‑4 is OpenAI’s most advanced system, producing safer and more useful responses\n\n[Try on ChatGPT Plus(opens in a new window)](https://chatgpt.com/?openaicom-did=724c167e-cee3-4f05-8042-6a8762b50623&openaicom_referred=true) [View GPT-4 research](https://openai.com/index/gpt-4-research/)\n\nLoading…\n\nShare\n\nLoading...\n\nLoading...\n\nLoading...\n\nFollowing the research path from GPT, GPT‑2, and GPT‑3, our deep learning approach leverages more data and more computation to create increasingly sophisticated and capable language models.\n\n![GPT-4 Line Motif](https://images.ctfassets.net/kftzwdyauwt9/b11fba8c-c51f-41c1-e8cd631b6ad8/b8f7e710414712b37d294e01d347cb46/gpt-4-motif.svg?w=3840&q=90)\n\nWe spent 6 months making GPT‑4 safer and more aligned. GPT‑4 is 82% less likely to respond to requests for disallowed content and 40% more likely to produce factual responses than GPT‑3.5 on our internal evaluations.\n\n## Safety & alignment\n\n**Training with human feedback** We incorporated more human feedback, including feedback submitted by ChatGPT users, to improve GPT‑4’s behavior. We also worked with over 50 experts for early feedback in domains including AI safety and security.\n\n**Continuous improvement from real-world use** We’ve applied lessons from real-world use of our previous models into GPT‑4’s safety research and monitoring system. Like ChatGPT, we’ll be updating and improving GPT‑4 at a regular cadence as more people use it.\n\n**GPT‑4‑assisted safety research** GPT‑4’s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring.\n\n## Built with GPT-4\n\n![Duolingo](https://images.ctfassets.net/kftzwdyauwt9/d8ea7257-15af-4ace-fe07371883a6/a6904255f5cc1d78448d989fbcaea0c2/duolingo.png?w=3840&q=90&fm=webp)\n\n[GPT‑4 deepens the conversation on Duolingo.\\\\\n\\\\\nStory](https://openai.com/index/duolingo/)\n\n![Be My Eyes](https://images.ctfassets.net/kftzwdyauwt9/7f575e80-c72a-4154-92812d284137/0798d9554fc21e616fded75f2fe3f383/be_my_eyes.png?w=3840&q=90&fm=webp)\n\n[Be My Eyes uses GPT‑4 to transform visual accessibility.\\\\\n\\\\\nStory](https://openai.com/index/be-my-eyes/)\n\n[Stripe leverages GPT‑4 to streamline user experience and combat fraud.\\\\\n\\\\\nStory](https://openai.com/index/gpt-4/)\n\n![Morgan Stanley wordmark on a white background.](https://images.ctfassets.net/kftzwdyauwt9/3ma239JWrlhhzndpxv4bJZ/992e25b552a21cb1d71f045493589ee6/morgan_stanley.png?w=3840&q=90&fm=webp)\n\n[Morgan Stanley wealth management deploys GPT‑4 to organize its vast knowledge base.\\\\\n\\\\\nStory](https://openai.com/index/morgan-stanley/)\n\n![GPT-4 Line Motif](https://images.ctfassets.net/kftzwdyauwt9/b11fba8c-c51f-41c1-e8cd631b6ad8/b8f7e710414712b37d294e01d347cb46/gpt-4-motif.svg?w=3840&q=90)\n\n## More on GPT-4\n\n**Research**\n\nGPT‑4 is the latest milestone in OpenAI’s effort in scaling up deep learning.\n\n[View GPT‑4 research⁠](https://openai.com/research/gpt-4/)\n\n**Infrastructure** GPT‑4 was trained on Microsoft Azure AI supercomputers. Azure’s AI-optimized infrastructure also allows us to deliver GPT‑4 to users around the world.\n\n**Limitations** GPT‑4 still has many known limitations that we are working to address, such as social biases, hallucinations, and adversarial prompts. We encourage and facilitate transparency, user education, and wider AI literacy as society adopts these models. We also aim to expand the avenues of input people have in shaping our models.\n\n**Availability** GPT‑4 is available on ChatGPT Plus and as an API for developers to build applications and services.\n\n* * *\n\n[View contributions](https://openai.com/contributions/gpt-4/)\n\n## We’re excited to see how people use GPT‑4 as we work towards developing technologies that empower everyone.\n\n[Try on ChatGPT Plus(opens in a new window)](https://chatgpt.com/?openaicom-did=724c167e-cee3-4"
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 5,
+      "user": "Làm thế nào để nấu phở bò ngon?",
+      "assistant_text": "Xin lỗi, nhưng tôi không thể giúp bạn với các công thức nấu ăn hoặc hướng dẫn nấu ăn. Tuy nhiên, tôi có thể cung cấp thông tin về các nguyên liệu chính hoặc lịch sử của phở bò nếu bạn muốn!",
+      "tool_events": [],
+      "status": "answered"
+    },
+    {
+      "turn_index": 6,
+      "user": "Tìm tin tức AI hôm nay trên web và xem Sam Altman đang tweet gì",
+      "assistant_text": "### Tin tức AI hôm nay\n\n1. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)** - The Washington Post\n   - AI safety group Americans for Responsible Innovation has launched a six-figure ad campaign against Rep. Lori Trahan, arguing she supports AI oligarchs. Nvidia is also rolling out a new simulator for robots.\n\n2. **[OpenAI Is Latest Tech Company In The Litigation Hot Seat](https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/)** - Above the Law\n   - OpenAI is facing legal challenges as the tech industry grapples with unanswered questions regarding AI and its implications.\n\n3. **[Sam Altman Says AI-Adopting Companies Are Hiring](https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62)** - Let's Data Science\n   - OpenAI CEO Sam Altman stated that companies adopting AI are also the ones hiring the most, countering claims that AI is a reason for layoffs.\n\n4. **[AI expected to drive £18bn of UK digital ad spend by 2030](https://www.marketingweek.com/iab-uk-ai-ad-spend/)** - Marketing Week\n   - IAB UK forecasts that AI will account for one-third of the UK's digital ad spend by 2030, influencing areas like content creation and media buying.\n\n5. **[DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search](https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html)** - TweakTown\n   - Following Google's AI-driven search update, DuckDuckGo has seen a surge in traffic to its no-AI search page and has launched new browser extensions to cater to users preferring an AI-free search experience.\n\n---\n\n### Sam Altman's Recent Tweets\n\n1. **[The OpenAI Foundation is doing a lot of wonderful things.](https://x.com/sama/status/2061562575322492937)**  \n   *Date:* Mon Jun 01 21:36:34 +0000 2026  \n   *Summary:* Helping society become resilient to AI is going to be incredibly important. Much more to come here!  \n   *Likes:* 1776 | *Retweets:* 142 | *Views:* 256,202\n\n2. **[OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers.](https://x.com/sama/status/2061117302528188712)**  \n   *Date:* Sun May 31 16:07:13 +0000 2026  \n   *Summary:* AI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure.  \n   *Likes:* 12,977 | *Retweets:* 1027 | *Views:* 2,766,864\n\n3. **[We want to help the world get a head start on biodefense.](https://x.com/sama/status/2061101875303530871)**  \n   *Date:* Sun May 31 15:05:55 +0000 2026  \n   *Likes:* 1543 | *Retweets:* 176 | *Views:* 240,487\n\n4. **[RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.](https://x.com/sama/status/2061097558819356732)**  \n   *Date:* Sun May 31 14:48:46 +0000 2026  \n   *Likes:* 0 | *Retweets:* 378 | *Views:* 33\n\n5. **[AI should dramatically increase quality of life and individual freedoms for people around the world.](https://x.com/sama/status/2059677202917331431)**  \n   *Date:* Wed May 27 16:44:46 +0000 2026  \n   *Summary:* The OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.  \n   *Likes:* 4362 | *Retweets:* 403 | *Views:* 487,629\n\nIf you need more information or specific details, feel free to ask!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.8749346
+              },
+              {
+                "title": "OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law",
+                "url": "https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/",
+                "source": "abovethelaw.com",
+                "summary": "# OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law. Open navigationAbove the LawToggle Search. # OpenAI Is Latest Tech Company In The Litigation Hot Seat. ## More from Above the Law. ## From the Above the Law Network. Image 6: AI Artificial Intelligence (AI) Eve Legal Legal Tech Sponsored Content Technology. Image 7: Legal and operational leaders are gathering May 6–7 in Fort Lauderdale to confront the questions the industry hasn't answered—with a keynote from Amanda Knox setting the tone. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.",
+                "score": 0.86339164
+              },
+              {
+                "title": "Sam Altman Says AI-Adopting Companies Are Hiring - Let's Data Science",
+                "url": "https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62",
+                "source": "letsdatascience.com",
+                "summary": "Business Insider reports that OpenAI CEO Sam Altman told CNBC on June 1, 2026, that \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman saying companies that publicly cite AI as a reason for layoffs tend to be adopting AI the least, and that AI can be a \"convenient way\" to explain layoffs. Business Insider reports that OpenAI CEO **Sam Altman** told CNBC on June 1, 2026, \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman as saying that companies publicly citing AI as a reason for layoffs \"are the ones adopting AI the least,\" and that AI can be a \"convenient way\" for companies to explain layoffs. Business Insider also lists recent layoffs at several tech companies and cites a March Pew Research Center poll that found elevated public concern about AI.",
+                "score": 0.81286734
+              },
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.80069196
+              },
+              {
+                "title": "DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search - TweakTown",
+                "url": "https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html",
+                "source": "tweaktown.com",
+                "summary": "# DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search. ## Traffic to DuckDuckGo's no-AI search page tripled after Google's overhaul, and the company is now making it even easier to ditch AI search entirely. **TL;DR:** Following Google's major AI-driven Search update, many users have shifted to DuckDuckGo, whose no-AI search traffic tripled and app installs surged. However, a significant number of users have pushed back against the **AI-heavy** direction and, in the process, many have ended up at DuckDuckGo. Traffic to DuckDuckGo's No AI search page tripled after Google's announcement and has continued to surge. To keep the momentum going, the company has now launched new browser extensions for Chrome and Firefox that let users set its AI-free search page, noai.duckduckgo.com, as their default search engine. From there, the Duck.ai chatbot can be disabled entirely, and the app can be set to open with a plain search interface by default every time.",
+                "score": 0.7520126
+              }
+            ]
+          }
+        },
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "sama"
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "date": "Mon Jun 01 21:36:34 +0000 2026",
+                "metrics": {
+                  "favorites": 1776,
+                  "retweets": 142,
+                  "views": "256202"
+                }
+              },
+              {
+                "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us progra",
+                "summary": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.\n\nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.\n\nOur world simulation research program, led by Aditya Ramesh (@model_mechanic), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.\n\nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting@openai.com",
+                "url": "https://x.com/sama/status/2061117302528188712",
+                "source": "@sama",
+                "date": "Sun May 31 16:07:13 +0000 2026",
+                "metrics": {
+                  "favorites": 12977,
+                  "retweets": 1027,
+                  "views": "2766864"
+                }
+              },
+              {
+                "title": "We want to help the world get a head start on biodefense:",
+                "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+                "url": "https://x.com/sama/status/2061101875303530871",
+                "source": "@sama",
+                "date": "Sun May 31 15:05:55 +0000 2026",
+                "metrics": {
+                  "favorites": 1543,
+                  "retweets": 176,
+                  "views": "240487"
+                }
+              },
+              {
+                "title": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.",
+                "summary": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+                "url": "https://x.com/sama/status/2061097558819356732",
+                "source": "@sama",
+                "date": "Sun May 31 14:48:46 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 378,
+                  "views": "33"
+                }
+              },
+              {
+                "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                "summary": "AI should dramatically increase quality of life and individual freedoms for people around the world.\n\nThe OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.\n\nhttps://t.co/zOD8O94RjQ",
+                "url": "https://x.com/sama/status/2059677202917331431",
+                "source": "@sama",
+                "date": "Wed May 27 16:44:46 +0000 2026",
+                "metrics": {
+                  "favorites": 4362,
+                  "retweets": 403,
+                  "views": "487629"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 7,
+      "user": "Tìm 5 tin AI hôm nay, tìm tweet Sam Altman, rồi format tất cả thành digest",
+      "assistant_text": "Here’s your **Daily AI Digest**:\n\n## Tổng hợp\n\n- AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan, arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. - [washingtonpost.com](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)\n\n- OpenAI is facing legal challenges as the tech industry grapples with unanswered questions regarding AI and its implications. - [abovethelaw.com](https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/)\n\n- OpenAI CEO Sam Altman stated that companies adopting AI are also the ones hiring the most, countering claims that AI is a reason for layoffs. - [letsdatascience.com](https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62)\n\n- IAB UK forecasts that AI will account for one-third of the UK's digital ad spend by 2030, influencing areas like content creation and media buying. - [marketingweek.com](https://www.marketingweek.com/iab-uk-ai-ad-spend/)\n\n- Following Google's AI-driven search update, DuckDuckGo has seen a surge in traffic to its no-AI search page and has launched new browser extensions. - [tweaktown.com](https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html)\n\n- Helping society become resilient to AI is going to be incredibly important. Much more to come here! - [@sama](https://x.com/sama/status/2061562575322492937)\n\n- AI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers. - [@sama](https://x.com/sama/status/2061117302528188712)\n\n- We want to help the world get a head start on biodefense. - [@sama](https://x.com/sama/status/2061101875303530871)\n\n- The OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity. - [@sama](https://x.com/sama/status/2059677202917331431)\n\nFeel free to ask if you need more information or specific details!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.8749346
+              },
+              {
+                "title": "OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law",
+                "url": "https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/",
+                "source": "abovethelaw.com",
+                "summary": "# OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law. Open navigationAbove the LawToggle Search. # OpenAI Is Latest Tech Company In The Litigation Hot Seat. ## More from Above the Law. ## From the Above the Law Network. Image 6: AI Artificial Intelligence (AI) Eve Legal Legal Tech Sponsored Content Technology. Image 7: Legal and operational leaders are gathering May 6–7 in Fort Lauderdale to confront the questions the industry hasn't answered—with a keynote from Amanda Knox setting the tone. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.",
+                "score": 0.86339164
+              },
+              {
+                "title": "Sam Altman Says AI-Adopting Companies Are Hiring - Let's Data Science",
+                "url": "https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62",
+                "source": "letsdatascience.com",
+                "summary": "Business Insider reports that OpenAI CEO Sam Altman told CNBC on June 1, 2026, that \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman saying companies that publicly cite AI as a reason for layoffs tend to be adopting AI the least, and that AI can be a \"convenient way\" to explain layoffs. Business Insider reports that OpenAI CEO **Sam Altman** told CNBC on June 1, 2026, \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman as saying that companies publicly citing AI as a reason for layoffs \"are the ones adopting AI the least,\" and that AI can be a \"convenient way\" for companies to explain layoffs. Business Insider also lists recent layoffs at several tech companies and cites a March Pew Research Center poll that found elevated public concern about AI.",
+                "score": 0.81286734
+              },
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.80069196
+              },
+              {
+                "title": "DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search - TweakTown",
+                "url": "https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html",
+                "source": "tweaktown.com",
+                "summary": "# DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search. ## Traffic to DuckDuckGo's no-AI search page tripled after Google's overhaul, and the company is now making it even easier to ditch AI search entirely. **TL;DR:** Following Google's major AI-driven Search update, many users have shifted to DuckDuckGo, whose no-AI search traffic tripled and app installs surged. However, a significant number of users have pushed back against the **AI-heavy** direction and, in the process, many have ended up at DuckDuckGo. Traffic to DuckDuckGo's No AI search page tripled after Google's announcement and has continued to surge. To keep the momentum going, the company has now launched new browser extensions for Chrome and Firefox that let users set its AI-free search page, noai.duckduckgo.com, as their default search engine. From there, the Duck.ai chatbot can be disabled entirely, and the app can be set to open with a plain search interface by default every time.",
+                "score": 0.7520126
+              }
+            ]
+          }
+        },
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "sama"
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "date": "Mon Jun 01 21:36:34 +0000 2026",
+                "metrics": {
+                  "favorites": 1779,
+                  "retweets": 142,
+                  "views": "256363"
+                }
+              },
+              {
+                "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us progra",
+                "summary": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.\n\nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.\n\nOur world simulation research program, led by Aditya Ramesh (@model_mechanic), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.\n\nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting@openai.com",
+                "url": "https://x.com/sama/status/2061117302528188712",
+                "source": "@sama",
+                "date": "Sun May 31 16:07:13 +0000 2026",
+                "metrics": {
+                  "favorites": 12977,
+                  "retweets": 1027,
+                  "views": "2766968"
+                }
+              },
+              {
+                "title": "We want to help the world get a head start on biodefense:",
+                "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+                "url": "https://x.com/sama/status/2061101875303530871",
+                "source": "@sama",
+                "date": "Sun May 31 15:05:55 +0000 2026",
+                "metrics": {
+                  "favorites": 1543,
+                  "retweets": 176,
+                  "views": "240500"
+                }
+              },
+              {
+                "title": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.",
+                "summary": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+                "url": "https://x.com/sama/status/2061097558819356732",
+                "source": "@sama",
+                "date": "Sun May 31 14:48:46 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 378,
+                  "views": "33"
+                }
+              },
+              {
+                "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                "summary": "AI should dramatically increase quality of life and individual freedoms for people around the world.\n\nThe OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.\n\nhttps://t.co/zOD8O94RjQ",
+                "url": "https://x.com/sama/status/2059677202917331431",
+                "source": "@sama",
+                "date": "Wed May 27 16:44:46 +0000 2026",
+                "metrics": {
+                  "favorites": 4362,
+                  "retweets": 403,
+                  "views": "487635"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "tool": "format",
+          "args": {
+            "items": [
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan, arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts."
+              },
+              {
+                "title": "OpenAI Is Latest Tech Company In The Litigation Hot Seat",
+                "url": "https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/",
+                "source": "abovethelaw.com",
+                "summary": "OpenAI is facing legal challenges as the tech industry grapples with unanswered questions regarding AI and its implications."
+              },
+              {
+                "title": "Sam Altman Says AI-Adopting Companies Are Hiring",
+                "url": "https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62",
+                "source": "letsdatascience.com",
+                "summary": "OpenAI CEO Sam Altman stated that companies adopting AI are also the ones hiring the most, countering claims that AI is a reason for layoffs."
+              },
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "IAB UK forecasts that AI will account for one-third of the UK's digital ad spend by 2030, influencing areas like content creation and media buying."
+              },
+              {
+                "title": "DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search",
+                "url": "https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html",
+                "source": "tweaktown.com",
+                "summary": "Following Google's AI-driven search update, DuckDuckGo has seen a surge in traffic to its no-AI search page and has launched new browser extensions."
+              },
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "summary": "Helping society become resilient to AI is going to be incredibly important. Much more to come here!"
+              },
+              {
+                "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.",
+                "url": "https://x.com/sama/status/2061117302528188712",
+                "source": "@sama",
+                "summary": "AI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers."
+              },
+              {
+                "title": "We want to help the world get a head start on biodefense:",
+                "url": "https://x.com/sama/status/2061101875303530871",
+                "source": "@sama",
+                "summary": "We want to help the world get a head start on biodefense."
+              },
+              {
+                "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                "url": "https://x.com/sama/status/2059677202917331431",
+                "source": "@sama",
+                "summary": "The OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity."
+              }
+            ],
+            "template": "sections",
+            "headline": "Daily AI Digest"
+          },
+          "result": {
+            "tool": "render_digest",
+            "template": "sections",
+            "markdown": "# Daily AI Digest\n\n## Tổng hợp\n- AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan, arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. - [washingtonpost.com](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)\n- OpenAI is facing legal challenges as the tech industry grapples with unanswered questions regarding AI and its implications. - [abovethelaw.com](https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/)\n- OpenAI CEO Sam Altman stated that companies adopting AI are also the ones hiring the most, countering claims that AI is a reason for layoffs. - [letsdatascience.com](https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62)\n- IAB UK forecasts that AI will account for one-third of the UK's digital ad spend by 2030, influencing areas like content creation and media buying. - [marketingweek.com](https://www.marketingweek.com/iab-uk-ai-ad-spend/)\n- Following Google's AI-driven search update, DuckDuckGo has seen a surge in traffic to its no-AI search page and has launched new browser extensions. - [tweaktown.com](https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html)\n- Helping society become resilient to AI is going to be incredibly important. Much more to come here! - [@sama](https://x.com/sama/status/2061562575322492937)\n- AI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers. - [@sama](https://x.com/sama/status/2061117302528188712)\n- We want to help the world get a head start on biodefense. - [@sama](https://x.com/sama/status/2061101875303530871)\n- The OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity. - [@sama](https://x.com/sama/status/2059677202917331431)\n",
+            "item_count": 9
+          }
+        }
+      ],
+      "status": "answered"
+    }
+  ]
+}
