@@ -1,0 +1,93 @@
+{
+  "transcript_id": "v3_openai_20260602T122638066322",
+  "version": "v3",
+  "artifact_version": "v3+p26ba0e212416+t98eb7f092432",
+  "prompt_hash": "26ba0e212416e067f993ec4258c3f8fe6d3e024afa9c6cc79411cca19af10136",
+  "tools_hash": "98eb7f0924325b74a60640c28ce053fb77624eaf856155bb2898cc939330ccfc",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\VinAi Action\\day4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\VinAi Action\\day4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T12:26:38",
+  "updated_at": "2026-06-02T12:26:45",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-06-02T12:26:38",
+      "user": "T??m th??ng tin v??? n?????c Vi???t Nam tr??n Wikipedia.",
+      "status": "provider_error",
+      "assistant_text": null,
+      "rounds": [],
+      "tool_events": [],
+      "error": "UnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f527' in position 0: character maps to <undefined>",
+      "ended_at": "2026-06-02T12:26:40"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T12:26:40",
+      "user": "T??m t???t b??i vi???t n??y gi??p m??nh",
+      "status": "provider_error",
+      "assistant_text": "Bạn vui lòng cung cấp đường link URL của bài viết mà bạn muốn tôi tóm tắt.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Bạn vui lòng cung cấp đường link URL của bài viết mà bạn muốn tôi tóm tắt.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "error": "UnicodeEncodeError: 'charmap' codec can't encode character '\\u1ea1' in position 10: character maps to <undefined>",
+      "ended_at": "2026-06-02T12:26:41"
+    },
+    {
+      "turn_index": 3,
+      "started_at": "2026-06-02T12:26:41",
+      "user": "https://openai.com/blog/gpt-5",
+      "status": "provider_error",
+      "assistant_text": null,
+      "rounds": [],
+      "tool_events": [],
+      "error": "UnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f527' in position 0: character maps to <undefined>",
+      "ended_at": "2026-06-02T12:26:42"
+    },
+    {
+      "turn_index": 4,
+      "started_at": "2026-06-02T12:26:42",
+      "user": "????ng b???n tin n??y l??n Telegram gi??p m??nh",
+      "status": "provider_error",
+      "assistant_text": "Bạn có thể cung cấp nội dung cụ thể mà bạn muốn gửi lên Telegram không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Bạn có thể cung cấp nội dung cụ thể mà bạn muốn gửi lên Telegram không?",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "error": "UnicodeEncodeError: 'charmap' codec can't encode character '\\u1ea1' in position 10: character maps to <undefined>",
+      "ended_at": "2026-06-02T12:26:43"
+    },
+    {
+      "turn_index": 5,
+      "started_at": "2026-06-02T12:26:43",
+      "user": "????ng th???, g???i ??i",
+      "status": "provider_error",
+      "assistant_text": "Xin lỗi, nhưng tôi không thể giúp bạn với yêu cầu này. Nếu bạn có câu hỏi hoặc yêu cầu nào khác liên quan đến nghiên cứu, tin tức, hoặc khoa học, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Xin lỗi, nhưng tôi không thể giúp bạn với yêu cầu này. Nếu bạn có câu hỏi hoặc yêu cầu nào khác liên quan đến nghiên cứu, tin tức, hoặc khoa học, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "error": "UnicodeEncodeError: 'charmap' codec can't encode character '\\u1ed7' in position 14: character maps to <undefined>",
+      "ended_at": "2026-06-02T12:26:45"
+    }
+  ]
+}

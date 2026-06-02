@@ -44,7 +44,6 @@ URL: _(chưa deploy)_
 5. `Tìm paper về transformer architecture trên arXiv, sau đó gửi kết quả qua email cho tôi.`
 
 ---
-
 ## Brief
 
 Trong lab này, nhóm build một research agent nhỏ nhưng chạy thật. Agent nhận request của user, chọn tool, truyền arguments, chạy tool thật, lưu full JSON log, rồi dùng log đó để tối ưu prompt/tool declaration qua nhiều version.

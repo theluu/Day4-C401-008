@@ -1,0 +1,199 @@
+{
+  "transcript_id": "v0_openai_20260602T154914104734",
+  "provider": "openai",
+  "created_at": "2026-06-02T15:49:14",
+  "updated_at": "2026-06-02T15:53:28",
+  "turns": [
+    {
+      "turn_index": 1,
+      "user": "Tìm các tTin tức AI hôm nay",
+      "assistant_text": "Here are the latest news articles about AI:\n\n1. **[AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week](https://www.marketingweek.com/iab-uk-ai-ad-spend/)**\n   - AI is projected to account for one-third of the UK's digital ad spend by 2030, amounting to approximately £18 billion. This growth is attributed to changes in search, content, and media buying, with significant contributions from AI-driven tools in various advertising channels.\n\n2. **[40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook](https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver)**\n   - A Bain report reveals that many companies are increasing their AI budgets despite underwhelming productivity gains. Only 40% of firms reported cost savings of less than 10% from AI initiatives, raising concerns among executives about the return on investment.\n\n3. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)**\n   - An AI safety group has launched a significant ad campaign against Rep. Lori Trahan, criticizing her legislative efforts related to AI. The article also discusses Nvidia's new developments in AI technology for robotics.\n\n4. **[AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal](https://www.insurancejournal.com/news/national/2026/06/01/871951.htm)**\n   - Bain's report indicates that missed savings targets in AI investments are causing discomfort among executives, especially as many are increasing their spending based on expected savings. The report emphasizes the importance of data accessibility for successful AI programs.\n\n5. **[New Report: The AI Rebuild of Travel - Skift](https://skift.com/insights/the-ai-rebuild-of-travel/)**\n   - The travel industry is undergoing a transformation as AI reshapes how trips are discovered, booked, and managed. The report highlights the challenges faced by traditional systems and the need for a more connected, autonomous future in travel technology.\n\nFeel free to ask if you need more information on any specific article!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.3331999
+              },
+              {
+                "title": "40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook",
+                "url": "https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver",
+                "source": "pitchbook.com",
+                "summary": "## The gap between AI spending and productivity gains “should be making executives uncomfortable,” a Bain report found. Corporates are beefing up their AI budgets but seeing lackluster productivity gains, according to the latest Bain & Company report. Bain’s Automation and AI Pathfinder Survey 2026, which had 951 respondents, found that 40% of the companies that tracked their spending recorded cost savings of less than 10% from their AI initiatives. Still, 90% of those surveyed whose AI investments underdelivered plan to increase their AI budgets next year. As compute and usage costs have risen dramatically, executives and shareholders are taking a closer look at the returns that those investments have brought so far. A PitchBook analysis of 186 AI-related questions on B2C earnings calls found that 90% were probing and investigative in tone, and that ROI and financial returns have overtaken product roadmaps as the dominant focus. Employees’ use of AI tools can range from coding assistants to AI-generated research to organizing unstructured databases.",
+                "score": 0.26990628
+              },
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.23527569
+              },
+              {
+                "title": "AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal",
+                "url": "https://www.insurancejournal.com/news/national/2026/06/01/871951.htm",
+                "source": "insurancejournal.com",
+                "summary": "The missed targets “should be making executives uncomfortable,” especially since many of them are approving increased spending for artificial intelligence on the basis of expected savings, the consulting firm said in a report shared exclusively with Bloomberg News. While some companies are funding fresh investment in generative and agentic AI with realized savings, the largest share (44%) cited targeted savings among their top sources of funding for the next wave of outlays, according to the report. “Despite a decade of investments in data modernization running well into hundreds of billions of dollars globally, the No. 1 reason AI programs underperform is that companies cannot reliably get access to their own data,” Bain said. Its prescription: Instead of waiting to structure all of their data to make it ingestible by AI, companies should start with what’s available to feed into the models — and then use AI to help sort out how to structure the rest.",
+                "score": 0.22715242
+              },
+              {
+                "title": "New Report: The AI Rebuild of Travel - Skift",
+                "url": "https://skift.com/insights/the-ai-rebuild-of-travel/",
+                "source": "skift.com",
+                "summary": "# New Report: The AI Rebuild of Travel. Travel technology is being rebuilt in real time as AI begins to shape how trips are discovered, booked, and managed. And systems built for websites and manual workflows are struggling to keep pace with a more connected, autonomous future. What once operated as a predictable digital journey is becoming an AI-mediated ecosystem powered by real-time data, interoperability, and increasingly intelligent systems. Skift Studio spoke with 10 senior technology, product, and digital leaders across airlines, hospitality companies, travel platforms, and technology providers to understand how the industry is preparing. One thing is clear: the next era of travel will be defined by infrastructure as much as interface. **Download the report to learn:**. * How AI assistants and agentic experiences are reshaping travel discovery and booking. * Why trust, governance, and identity are becoming central to AI-powered travel. * How airlines, hotels, and platforms are preparing for a more autonomous future.",
+                "score": 0.20429464
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "turn_index": 2,
+      "user": "Hôm nay Donal Trump có phát biểu j đáng chú ý",
+      "assistant_text": "Here are some notable statements and news related to Donald Trump today:\n\n1. **Donald Trump's Name Stays on the Kennedy Center Despite Court Order**  \n   A federal judge ruled that Donald Trump's name should not be removed from the Kennedy Center, despite a previous order to do so. The decision comes after a controversial renaming by a board made up of Trump appointees. [Read more here](https://www.yahoo.com/news/politics/articles/donald-trumps-name-stays-on-the-kennedy-center-despite-court-order-071837535.html).\n\n2. **Trump Claims He Convinced Netanyahu Not to Attack Beirut**  \n   Trump stated that he successfully persuaded Israeli Prime Minister Benjamin Netanyahu to refrain from sending troops to attack Beirut. This claim was made during a video segment on Sky News Australia. [Watch the video here](https://www.facebook.com/SkyNewsAustralia/videos/trump-dominates-netanyahu-forcing-troops-to-turn-around-barring-the-idf-from-maj/2723298384718790/).\n\n3. **Trump's $1.8 Billion Fund on Hold**  \n   The Trump administration has put a nearly $1.8 billion fund meant to compensate allies on hold due to legal challenges and political backlash. This fund was part of a settlement related to a lawsuit against the IRS. [Read more here](https://apnews.com/article/trump-justice-fund-jan6-capitol-riot-39b193211349b42e6218c5a1007785c9).\n\n4. **Trump on Iran Negotiations**  \n   Trump claimed that talks with Iran are continuing at a \"rapid pace,\" despite reports from Iranian state media suggesting that negotiations have been suspended. [Watch the video here](https://www.facebook.com/SkyNewsAustralia/videos/trump-shuts-down-reports-iran-has-suspended-peace-talks-over-israels-war-in-leba/1306110558368078/).\n\n5. **Recent Tweets from Donald Trump**  \n   - Trump criticized Congressman Thomas Massie, calling him the \"Worst Congressman in the History of our Country\" and demanded he withdraw a \"fake statement.\" [View tweet](https://x.com/realDonaldTrump/status/2056827052851105947).\n   - He shared a link without additional context. [View tweet](https://x.com/realDonaldTrump/status/2057968277062582378).\n\nIf you need more details or specific information, feel free to ask!",
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "Donald Trump",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Donald Trump",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "Donald Trump's Name Stays on the Kennedy Center Despite Court Order - Yahoo",
+                "url": "https://www.yahoo.com/news/politics/articles/donald-trumps-name-stays-on-the-kennedy-center-despite-court-order-071837535.html",
+                "source": "yahoo.com",
+                "summary": "# Donald Trump's Name Stays on the Kennedy Center Despite Court Order. A federal judge has ordered **Donald Trump’s** name be removed from the **Kennedy Center**. Interior Secretary Doug Burgum refused to commit to removing President Donald Trump’s name from the Kennedy Center on Sunday. ## Donald Trump’s name won’t be removed from Kennedy Center. U.S. District Judge Christopher Cooper ruled on Friday that Donald Trump’s name was illegally added to the landmark Washington, D.C. arts venue. For those unaware, in December 2025, the Kennedy Center’s board — made up entirely of Trump appointees — voted to rename the venue the “Trump Kennedy Center.” Workers added 18 new letters to the building’s facade, making it read: “The Donald J. He noted his order “does not bar the board from reconsidering the closure issue in a prudent manner.” Any decision to close, he added, must be independent and informed by the center’s obligation to “maintain and operate a premiere arts venue.”. The post Donald Trump’s Name Stays on the Kennedy Center Despite Court Order appeared first on Reality Tea.",
+                "score": 0.8705973
+              },
+              {
+                "title": "Sky News Australia. . US President Donald Trump has stated that he has convinced Israeli Prime Minister Benjamin Netanyahu not to send troops to attack the Lebanese capital, Beirut. - facebook.com",
+                "url": "https://www.facebook.com/SkyNewsAustralia/videos/trump-dominates-netanyahu-forcing-troops-to-turn-around-barring-the-idf-from-maj/2723298384718790/",
+                "source": "facebook.com",
+                "summary": "# US President Donald Trump has stated that he has convinced Israeli Prime Minister Benjamin Netanyahu not to send troops to attack the Lebanese capital, Beirut. # Video. Trump dominates Netanyahu forcing troops to turn around, barring the IDF from major raid on Beirut. ## **Sky News Australia**. US President Donald Trump has stated that he has convinced Israeli Prime Minister Benjamin Netanyahu…. It wouldn't even be considered if Lebanon had stopped Hezbollah from attacking Israeli apartment buildings from Lebanon. Image 5: Video thumbnail 8:26. Spencer Pratt gives brutal reality check to Bill Maher on his own podcast. ‘You’re f**king crazy’: Trump lashes out at Netanyahu in heated phone call. Trump calls Netanyahu ‘f**king crazy’ in heated phone call over Israel’s Lebanon offensive. Coalition demands an election as Labor pushes to get tax bill through parliament. Australia urged to be the ‘voice of steadiness’ in AUKUS deal. Labor MP Ed Husic challenges Albanese to reconsider AUKUS submarine deal.",
+                "score": 0.83867973
+              },
+              {
+                "title": "Donald Trump admin puts 'weaponization' fund on hold - The Jerusalem Post",
+                "url": "https://www.jpost.com/american-politics/article-898043",
+                "source": "jpost.com",
+                "summary": "## The fund emerged from a legal settlement between Trump and the Justice Department to resolve a lawsuit in which the president sued the Internal Revenue Service for $10 ‌billion. A mob of supporters of US President Donald Trump storm the U.S. Capitol Building in Washington, U.S., January 6, 2021. US President Donald Trump's nearly $1.8 billion fund to compensate ‌victims of alleged government “weaponization\" has been put on hold after the White House faced fierce opposition from Republicans in Congress, three sources familiar with the plan said on Monday. The White House's goal is to speed passage of the funding package, said the source, who, like other sources, spoke on the condition of anonymity to discuss internal deliberations. The fund emerged from a legal settlement between Trump and the Justice Department to resolve an unprecedented $10 ‌billion lawsuit against the IRS over the alleged mishandling of his tax records. Two sources sought to distance the White House from the fund, claiming it was the Justice Department and Blanche's idea.",
+                "score": 0.7704648
+              },
+              {
+                "title": "Trump reconsidering $1.8 billion fund, AP source says, as Justice Department temporarily pauses it - AP News",
+                "url": "https://apnews.com/article/trump-justice-fund-jan6-capitol-riot-39b193211349b42e6218c5a1007785c9",
+                "source": "apnews.com",
+                "summary": "# Trump reconsidering $1.8 billion fund, AP source says, as Justice Department temporarily pauses it. The Trump administration said Monday it will comply with a court ruling temporarily blocking a nearly $1.8 billion fund meant to compensate allies of President Donald Trump. WASHINGTON (AP) — President Donald Trump is reconsidering whether to move forward with a <$1.8 billion fund> meant to compensate his allies, a person familiar with his thinking said Monday, as the Justice Department said it would temporarily pause its implementation to comply with a court order. The potential retreat is a nod to the legal setbacks the fund has encountered since it was announced two weeks ago and a recognition of the mounting political backlash from Republicans concerned by a lack of oversight of the money disbursement and the possibility of payouts to participants in the Jan. 6, 2021, riot at the U.S. Capitol.",
+                "score": 0.6943027
+              },
+              {
+                "title": "Sky News Australia. . US President Donald Trump claims talks with Iran are continuing at a “rapid pace” despite Iranian state media reporting Iran is suspending negotiations over Israel’s war in Lebanon. - facebook.com",
+                "url": "https://www.facebook.com/SkyNewsAustralia/videos/trump-shuts-down-reports-iran-has-suspended-peace-talks-over-israels-war-in-leba/1306110558368078/",
+                "source": "facebook.com",
+                "summary": "# US President Donald Trump claims talks with Iran are continuing at a “rapid pace” despite Iranian state media reporting Iran is suspending negotiations over Israel’s war in Lebanon. # Video. Trump shuts down reports Iran has suspended peace talks over Israel’s war in Lebanon. ## **Sky News Australia**. US President Donald Trump claims talks with Iran are continuing at a “rapid pace” despite Iranian st…. ## Comments. Didnt they attack each other a few hours ago ? This man can lie hmmmmm. ## Related videos. Image 6: Video thumbnail 11:25. Bombshell poll shows Spencer Pratt leading in LA race. Australia braces for more gloomy weather as damaging wind risk continues. Malta rocked by massive explosion at fireworks factory. Lefties Losing It: Lizzo stars in Sports Illustrated show. Trouble for Keir Starmer as more damning Mandelson files released. Iraqi man accused of Ivanka Trump assassination plot pleads not guilty to eight charges. ‘Overdiagnosis’ culture blasted after Disneyland disability line longer than able-bodied.",
+                "score": 0.69097626
+              }
+            ]
+          }
+        },
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "realDonaldTrump",
+            "limit": 5
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "realDonaldTrump",
+            "items": [
+              {
+                "title": "https://t.co/LU644jFVH2",
+                "summary": "https://t.co/LU644jFVH2",
+                "url": "https://x.com/realDonaldTrump/status/2057968277062582378",
+                "source": "@realDonaldTrump",
+                "date": "Fri May 22 23:34:07 +0000 2026",
+                "metrics": {
+                  "favorites": 902986,
+                  "retweets": 96683,
+                  "views": "96434272"
+                }
+              },
+              {
+                "title": "Horrible Congressman Thomas Massie put out an old Endorsement, from many years ago, of him by me long before I found out",
+                "summary": "Horrible Congressman Thomas Massie put out an old Endorsement, from many years ago, of him by me long before I found out that he was the Worst Congressman in the History of our Country. I endorsed Ed Gallrein, a true American Patriot, which Massie knows full well, so the statement that he put out is fraudulent, just like HE is fraudulent. WITHDRAW YOUR FAKE STATEMENT, MASSIE, RIGHT NOW! President DONALD J. TRUMP",
+                "url": "https://x.com/realDonaldTrump/status/2056827052851105947",
+                "source": "@realDonaldTrump",
+                "date": "Tue May 19 19:59:18 +0000 2026",
+                "metrics": {
+                  "favorites": 280162,
+                  "retweets": 39683,
+                  "views": "64465280"
+                }
+              },
+              {
+                "title": "https://t.co/uAxTGrJisv",
+                "summary": "https://t.co/uAxTGrJisv",
+                "url": "https://x.com/realDonaldTrump/status/2028505632123326484",
+                "source": "@realDonaldTrump",
+                "date": "Mon Mar 02 16:20:05 +0000 2026",
+                "metrics": {
+                  "favorites": 603806,
+                  "retweets": 77663,
+                  "views": "136401500"
+                }
+              },
+              {
+                "title": "https://t.co/BZuJDudLej",
+                "summary": "https://t.co/BZuJDudLej",
+                "url": "https://x.com/realDonaldTrump/status/2027651077865157033",
+                "source": "@realDonaldTrump",
+                "date": "Sat Feb 28 07:44:23 +0000 2026",
+                "metrics": {
+                  "favorites": 995511,
+                  "retweets": 153871,
+                  "views": "202738121"
+                }
+              },
+              {
+                "title": "RT @DanScavino: On behalf of Erin and me, thank you to everyone for the love and support we've received. We both had an ",
+                "summary": "RT @DanScavino: On behalf of Erin and me, thank you to everyone for the love and support we've received. We both had an unforgettable weddi…",
+                "url": "https://x.com/realDonaldTrump/status/2018512054379004088",
+                "source": "@realDonaldTrump",
+                "date": "Tue Feb 03 02:29:10 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 13923,
+                  "views": "2428"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "status": "answered"
+    }
+  ]
+}
