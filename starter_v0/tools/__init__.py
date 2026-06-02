@@ -18,6 +18,9 @@ from .social_search.tool import search_tweets
 from .send.tool import send_telegram
 from .lookup.tool import web_search
 from .hackernews.tool import search_hackernews
+from .wikipedia.tool import search_wikipedia
+from .github_trending.tool import get_github_trending
+from .translate.tool import translate_text
 
 
 # NOTE (starter_v0): tool names here are intentionally vague. These keys are the
@@ -37,6 +40,9 @@ TOOL_FUNCTIONS = {
     "papers": arxiv_search,
     "paper_text": get_arxiv_paper_text,
     "hackernews": search_hackernews,
+    "wikipedia": search_wikipedia,
+    "github_trending": get_github_trending,
+    "translate": translate_text,
 }
 
 

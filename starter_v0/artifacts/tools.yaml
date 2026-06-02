@@ -126,3 +126,33 @@ tools:
         max_results: {type: integer, default: 5, description: "Number of stories to return"}
         sort: {type: string, enum: [relevance, date], default: "relevance", description: "relevance = best match, date = newest first"}
       required: [query]
+
+  - name: wikipedia
+    description: "Search Wikipedia for background information, definitions, and encyclopedic knowledge. Use when user asks for background context, history, or general knowledge about a topic."
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Search term"}
+        max_results: {type: integer, default: 3, description: "Number of articles"}
+        lang: {type: string, default: "en", description: "Language code: en, vi, zh, fr, etc."}
+      required: [query]
+
+  - name: github_trending
+    description: "Get trending GitHub repositories. Use when user asks about popular open-source projects, trending repos, or what developers are building right now."
+    parameters:
+      type: object
+      properties:
+        language: {type: string, default: "", description: "Filter by programming language (python, javascript, etc.)"}
+        since: {type: string, enum: [daily, weekly, monthly], default: "daily", description: "Time period"}
+        max_results: {type: integer, default: 5, description: "Number of repos"}
+      required: []
+
+  - name: translate
+    description: "Translate text between languages. Use when user explicitly asks to translate something. target_lang: 'en' for English, 'vi' for Vietnamese, 'zh-CN' for Chinese, 'fr' for French."
+    parameters:
+      type: object
+      properties:
+        text: {type: string, default: "", description: "Text to translate"}
+        target_lang: {type: string, default: "en", description: "Target language code"}
+        source_lang: {type: string, default: "auto", description: "Source language (auto-detect)"}
+      required: [text]
