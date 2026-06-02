@@ -2,8 +2,11 @@
 
 ## Team
 
-- Team: AnhNQ-2A202600608 & Partners
-- Members: AnhNQ
+- Team: Day4-C401-008
+- Members:
+  - Nguyễn Quang Anh-2A202600608
+  - Lưu Xuân Thế-2A202600983
+  - Nguyễn Đức Minh-2A202600604
 - Provider/model: OpenAI / `gpt-4o-mini`
 
 ## Final Metrics
