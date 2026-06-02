@@ -16,8 +16,8 @@
       "phase": "B", "suite": "base",
       "query": "Mọi người đang bàn gì về GPT-5 trên Twitter?",
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "social_search", "args": {}}]},
-      "metadata": {"skill": "routing_search_tweets", "difficulty": "easy", "what_it_tests": "Tweet theo CHỦ ĐỀ → search_tweets, không phải get_user_tweets."}
+      "expect": {"tool_calls": [{"name": "social_search", "args": {"query": "GPT-5"}}]},
+      "metadata": {"skill": "routing_search_tweets", "difficulty": "easy", "what_it_tests": "Kiểm tra định tuyến câu hỏi tweet theo chủ đề. Yêu cầu mô hình định tuyến chính xác sang công cụ social_search và trích xuất đúng thực thể chính 'GPT-5' làm đối số query."}
     },
     {
       "id": "R03_web_news_routing",
@@ -48,16 +48,16 @@
       "phase": "B", "suite": "base",
       "query": "Tin công nghệ trong tuần này",
       "failure_type": "wrong_arg_value",
-      "expect": {"tool_calls": [{"name": "lookup", "args": {"topic": "news", "timeframe": "week"}}]},
-      "metadata": {"skill": "arg_timeframe", "difficulty": "medium", "what_it_tests": "'tuần này' → timeframe=week."}
+      "expect": {"tool_calls": [{"name": "lookup", "args": {"query": "technology", "topic": "news", "timeframe": "week"}}]},
+      "metadata": {"skill": "arg_timeframe", "difficulty": "medium", "what_it_tests": "Kiểm tra trích xuất tham số thời gian và từ khóa. Yêu cầu mô hình ánh xạ cụm từ 'tuần này' thành đối số timeframe='week', chủ đề là 'news', và trích xuất đúng từ khóa chính là 'technology'."}
     },
     {
       "id": "R07_search_type_arg",
       "phase": "B", "suite": "base",
       "query": "Cho mình các tweet phổ biến (top) nhất về OpenAI",
       "failure_type": "wrong_arg_value",
-      "expect": {"tool_calls": [{"name": "social_search", "args": {"search_type": "Top"}}]},
-      "metadata": {"skill": "arg_search_type", "difficulty": "medium", "what_it_tests": "'phổ biến/top' → search_type=Top (không phải Latest)."}
+      "expect": {"tool_calls": [{"name": "social_search", "args": {"query": "OpenAI", "search_type": "Top"}}]},
+      "metadata": {"skill": "arg_search_type", "difficulty": "medium", "what_it_tests": "Kiểm tra loại sắp xếp tìm kiếm social. Yêu cầu mô hình ánh xạ cụm từ 'phổ biến/top nhất' thành đối số search_type='Top' và trích xuất đúng thực thể chính 'OpenAI' làm đối số query."}
     },
     {
       "id": "R08_out_of_scope",

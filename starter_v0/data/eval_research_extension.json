@@ -9,8 +9,8 @@
       "suite": "extension",
       "query": "Theo company policy, tweet viral có được coi là fact đã xác nhận không?",
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "policy", "args": {"policy_area": "source_citation"}}]},
-      "metadata": {"skill": "company_source_policy", "difficulty": "medium", "what_it_tests": "Câu hỏi policy nội bộ về source/citation → search_company_policy."}
+      "expect": {"tool_calls": [{"name": "policy", "args": {"query": "tweet viral", "policy_area": "source_citation"}}]},
+      "metadata": {"skill": "company_source_policy", "difficulty": "medium", "what_it_tests": "Kiểm tra ánh xạ câu hỏi chính sách về độ tin cậy của bài đăng mạng xã hội (tweet viral) vào nhóm 'source_citation' và trích xuất đúng nội dung tìm kiếm."}
     },
     {
       "id": "E02_company_data_privacy",
@@ -18,8 +18,8 @@
       "suite": "extension",
       "query": "Theo policy công ty, có được đưa API key hoặc dữ liệu khách hàng vào prompt của model không?",
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "policy", "args": {"policy_area": "data_privacy"}}]},
-      "metadata": {"skill": "company_data_privacy_policy", "difficulty": "medium", "what_it_tests": "Câu hỏi secrets/customer data → company policy, không dùng web."}
+      "expect": {"tool_calls": [{"name": "policy", "args": {"query": "API key hoặc dữ liệu khách hàng vào prompt của model", "policy_area": "data_privacy"}}]},
+      "metadata": {"skill": "company_data_privacy_policy", "difficulty": "medium", "what_it_tests": "Kiểm tra ánh xạ chính sách bảo mật thông tin (API key, dữ liệu khách hàng) vào nhóm 'data_privacy' và trích xuất đúng nội dung tìm kiếm."}
     },
     {
       "id": "E03_company_telegram_approval",
@@ -27,8 +27,8 @@
       "suite": "extension",
       "query": "Theo policy công ty, đăng bản tin lên Telegram channel có cần xác nhận trước không?",
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "policy", "args": {"policy_area": "external_publishing"}}]},
-      "metadata": {"skill": "company_external_publishing_policy", "difficulty": "medium", "what_it_tests": "Câu hỏi write/publish policy → company policy."}
+      "expect": {"tool_calls": [{"name": "policy", "args": {"query": "đăng bản tin lên Telegram channel", "policy_area": "external_publishing"}}]},
+      "metadata": {"skill": "company_external_publishing_policy", "difficulty": "medium", "what_it_tests": "Kiểm tra ánh xạ chính sách đăng tin lên kênh ngoài (Telegram channel) vào nhóm 'external_publishing' và trích xuất đúng nội dung tìm kiếm."}
     },
     {
       "id": "E04_arxiv_search_topic",
@@ -36,8 +36,8 @@
       "suite": "extension",
       "query": "Tìm paper arXiv về retrieval augmented generation evaluation.",
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "papers", "args": {}}]},
-      "metadata": {"skill": "arxiv_search", "difficulty": "medium", "what_it_tests": "Paper/preprint discovery → arxiv_search."}
+      "expect": {"tool_calls": [{"name": "papers", "args": {"query": "retrieval augmented generation evaluation"}}]},
+      "metadata": {"skill": "arxiv_search", "difficulty": "medium", "what_it_tests": "Kiểm tra định tuyến tìm kiếm bài báo khoa học học thuật trên arXiv và trích xuất chính xác cụm từ tìm kiếm."}
     },
     {
       "id": "E05_arxiv_paper_text",
@@ -67,10 +67,10 @@
       "query": "Tìm paper mới về AI agents và kiểm tra policy công ty về cách trích dẫn arXiv.",
       "failure_type": "wrong_tool",
       "expect": {"tool_calls": [
-        {"name": "papers", "args": {}},
-        {"name": "policy", "args": {"policy_area": "source_citation"}}
+        {"name": "papers", "args": {"query": "AI agents"}},
+        {"name": "policy", "args": {"query": "trích dẫn arXiv", "policy_area": "source_citation"}}
       ]},
-      "metadata": {"skill": "parallel_arxiv_plus_policy", "difficulty": "hard", "what_it_tests": "Paper search + company citation policy."}
+      "metadata": {"skill": "parallel_arxiv_plus_policy", "difficulty": "hard", "what_it_tests": "Kiểm tra cuộc gọi song song tìm paper AI agents trên arXiv và tra cứu cẩm nang trích dẫn arXiv của công ty."}
     },
     {
       "id": "E08_specific_url_not_arxiv",
@@ -80,9 +80,9 @@
       "failure_type": "wrong_tool",
       "expect": {"tool_calls": [
         {"name": "fetch", "args": {"url": "https://openai.com/research/"}},
-        {"name": "policy", "args": {"policy_area": "ai_research"}}
+        {"name": "policy", "args": {"query": "research workflow", "policy_area": "ai_research"}}
       ]},
-      "metadata": {"skill": "url_plus_company_policy", "difficulty": "hard", "what_it_tests": "Specific URL → read_url, internal research policy → company policy."}
+      "metadata": {"skill": "url_plus_company_policy", "difficulty": "hard", "what_it_tests": "Đọc link cụ thể bằng read_url kết hợp tra cứu chính sách quy trình nghiên cứu ai_research của công ty."}
     },
     {
       "id": "E09_two_links_parallel",
@@ -102,8 +102,8 @@
       "suite": "extension",
       "query": "Tìm research paper arXiv mới về AI agent evaluation.",
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "papers", "args": {}}]},
-      "metadata": {"skill": "arxiv_research_search", "difficulty": "medium", "what_it_tests": "Research paper/arXiv discovery → arxiv_search."}
+      "expect": {"tool_calls": [{"name": "papers", "args": {"query": "AI agent evaluation"}}]},
+      "metadata": {"skill": "arxiv_research_search", "difficulty": "medium", "what_it_tests": "Kiểm tra định tuyến tìm kiếm bài báo khoa học học thuật arXiv mới và trích xuất đúng thực thể chính làm đối số query."}
     }
   ]
 }

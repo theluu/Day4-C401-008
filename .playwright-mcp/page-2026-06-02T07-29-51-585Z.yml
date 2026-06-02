@@ -1,0 +1,454 @@
+- generic [ref=e2]:
+  - generic [ref=e11]:
+    - heading "Settings" [level=2] [ref=e15]
+    - generic [ref=e17]:
+      - paragraph [ref=e21]: Version
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: v3
+          - combobox "Selected v3. Version" [ref=e27]
+        - img "open" [ref=e29]
+    - generic [ref=e32]:
+      - paragraph [ref=e36]: Provider
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: openai
+          - combobox "Selected openai. Provider" [ref=e42]
+        - img "open" [ref=e44]
+    - button "🗑️ Clear chat" [ref=e48] [cursor=pointer]:
+      - paragraph [ref=e52]: 🗑️ Clear chat
+    - separator [ref=e57]
+    - paragraph [ref=e62]: Tool calls shown inside each response.
+  - generic [ref=e3]:
+    - banner [ref=e65]:
+      - generic [ref=e68]:
+        - generic [ref=e583]:
+          - img "Running..." [ref=e584]:
+            - img [ref=e585]
+          - button "Stop" [ref=e589] [cursor=pointer]
+        - button "Deploy" [ref=e70] [cursor=pointer]:
+          - generic [ref=e72]: Deploy
+        - button "Main menu" [ref=e74] [cursor=pointer]:
+          - img [ref=e75]
+    - generic [ref=e78]:
+      - generic [ref=e80]:
+        - heading "🔍 Research Agent" [level=1] [ref=e85]:
+          - text: 🔍 Research Agent
+          - generic [ref=e86]:
+            - link "Link to heading":
+              - /url: "#research-agent"
+              - img
+        - generic [ref=e114]:
+          - generic [ref=e117]: face
+          - generic "Chat message from user" [ref=e118]:
+            - paragraph [ref=e124]: Tin AI mới nhất hôm nay
+        - generic [ref=e126]:
+          - generic [ref=e129]: smart_toy
+          - generic "Chat message from assistant" [ref=e130]:
+            - generic [ref=e131]:
+              - generic [ref=e143]:
+                - paragraph [ref=e144]: "Here are the latest news articles about AI from today:"
+                - list [ref=e145]:
+                  - listitem [ref=e146]:
+                    - paragraph [ref=e147]:
+                      - strong [ref=e148]:
+                        - link "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week" [ref=e149] [cursor=pointer]:
+                          - /url: https://www.marketingweek.com/iab-uk-ai-ad-spend/
+                    - list [ref=e150]:
+                      - listitem [ref=e151]: "Summary: AI is projected to drive one-third of the UK's digital ad spend, amounting to £18bn by 2030. This growth is attributed to changes in search, content, and media buying, with significant contributions from AI buying tools in various advertising channels."
+                  - listitem [ref=e152]:
+                    - paragraph [ref=e153]:
+                      - strong [ref=e154]:
+                        - link "40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook" [ref=e155] [cursor=pointer]:
+                          - /url: https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver
+                    - list [ref=e156]:
+                      - listitem [ref=e157]: "Summary: A Bain report reveals that many companies are increasing their AI budgets despite underwhelming productivity gains. Only 40% of companies reported cost savings of less than 10% from AI initiatives, raising concerns among executives about the return on investment."
+                  - listitem [ref=e158]:
+                    - paragraph [ref=e159]:
+                      - strong [ref=e160]:
+                        - 'link "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post" [ref=e161] [cursor=pointer]':
+                          - /url: https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/
+                    - list [ref=e162]:
+                      - listitem [ref=e163]: "Summary: An AI safety group has launched an ad campaign against Rep. Lori Trahan, criticizing her legislative efforts. The article also discusses Nvidia's new developments in AI technology and the ongoing challenges in AI regulation."
+                  - listitem [ref=e164]:
+                    - paragraph [ref=e165]:
+                      - strong [ref=e166]:
+                        - link "AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal" [ref=e167] [cursor=pointer]:
+                          - /url: https://www.insurancejournal.com/news/national/2026/06/01/871951.htm
+                    - list [ref=e168]:
+                      - listitem [ref=e169]: "Summary: Bain's report highlights that missed savings targets in AI investments are causing discomfort among executives. Many companies are struggling to access their data, which hampers the performance of AI programs."
+                  - listitem [ref=e170]:
+                    - paragraph [ref=e171]:
+                      - strong [ref=e172]:
+                        - 'link "New Report: The AI Rebuild of Travel - Skift" [ref=e173] [cursor=pointer]':
+                          - /url: https://skift.com/insights/the-ai-rebuild-of-travel/
+                    - list [ref=e174]:
+                      - listitem [ref=e175]: "Summary: The travel industry is undergoing a transformation as AI reshapes how trips are discovered and booked. The report discusses the challenges and opportunities presented by AI in creating a more connected and autonomous travel experience."
+                - paragraph [ref=e176]: Feel free to ask if you need more information on any of these articles!
+              - group [ref=e179]:
+                - generic "keyboard_arrow_down 🔧 web_search" [ref=e187] [cursor=pointer]:
+                  - generic [ref=e181]:
+                    - generic [ref=e189]: keyboard_arrow_down
+                    - paragraph [ref=e186]: 🔧 web_search
+                - generic [ref=e197]:
+                  - generic [ref=e199] [cursor=pointer]:
+                    - img [ref=e202]
+                    - generic [ref=e204]: "{"
+                  - generic [ref=e206]:
+                    - generic [ref=e207]:
+                      - generic [ref=e209] [cursor=pointer]:
+                        - img [ref=e212]
+                        - generic [ref=e214]:
+                          - generic [ref=e215]: "\"args\""
+                          - generic [ref=e216]: ":"
+                        - generic [ref=e217]: "{"
+                      - generic [ref=e219]:
+                        - generic [ref=e220]:
+                          - generic [ref=e221]:
+                            - generic [ref=e222]:
+                              - text: "\""
+                              - generic [ref=e223]: query
+                              - text: "\""
+                            - generic [ref=e224]: ":"
+                          - generic [ref=e227]: "\"AI\""
+                        - generic [ref=e228]:
+                          - generic [ref=e229]:
+                            - generic [ref=e230]:
+                              - text: "\""
+                              - generic [ref=e231]: topic
+                              - text: "\""
+                            - generic [ref=e232]: ":"
+                          - generic [ref=e235]: "\"news\""
+                        - generic [ref=e236]:
+                          - generic [ref=e237]:
+                            - generic [ref=e238]:
+                              - text: "\""
+                              - generic [ref=e239]: timeframe
+                              - text: "\""
+                            - generic [ref=e240]: ":"
+                          - generic [ref=e243]: "\"day\""
+                        - generic [ref=e244]:
+                          - generic [ref=e245]:
+                            - generic [ref=e246]:
+                              - text: "\""
+                              - generic [ref=e247]: max_results
+                              - text: "\""
+                            - generic [ref=e248]: ":"
+                          - generic [ref=e250] [cursor=pointer]: "5"
+                      - generic [ref=e252] [cursor=pointer]: "}"
+                    - generic [ref=e253]:
+                      - generic [ref=e255] [cursor=pointer]:
+                        - img [ref=e258]
+                        - generic [ref=e260]:
+                          - generic [ref=e261]: "\"result\""
+                          - generic [ref=e262]: ":"
+                        - generic [ref=e263]: "{"
+                      - generic [ref=e265]:
+                        - generic [ref=e266]:
+                          - generic [ref=e267]:
+                            - generic [ref=e268]:
+                              - text: "\""
+                              - generic [ref=e269]: tool
+                              - text: "\""
+                            - generic [ref=e270]: ":"
+                          - generic [ref=e273]: "\"web_search\""
+                        - generic [ref=e274]:
+                          - generic [ref=e275]:
+                            - generic [ref=e276]:
+                              - text: "\""
+                              - generic [ref=e277]: query
+                              - text: "\""
+                            - generic [ref=e278]: ":"
+                          - generic [ref=e281]: "\"AI\""
+                        - generic [ref=e282]:
+                          - generic [ref=e283]:
+                            - generic [ref=e284]:
+                              - text: "\""
+                              - generic [ref=e285]: topic
+                              - text: "\""
+                            - generic [ref=e286]: ":"
+                          - generic [ref=e289]: "\"news\""
+                        - generic [ref=e290]:
+                          - generic [ref=e291]:
+                            - generic [ref=e292]:
+                              - text: "\""
+                              - generic [ref=e293]: timeframe
+                              - text: "\""
+                            - generic [ref=e294]: ":"
+                          - generic [ref=e297]: "\"day\""
+                        - generic [ref=e298]:
+                          - generic [ref=e300] [cursor=pointer]:
+                            - img [ref=e303]
+                            - generic [ref=e305]:
+                              - generic [ref=e306]: "\"items\""
+                              - generic [ref=e307]: ":"
+                            - generic [ref=e308]: "["
+                          - generic [ref=e310]:
+                            - generic [ref=e311]:
+                              - generic [ref=e313] [cursor=pointer]:
+                                - img [ref=e316]
+                                - generic [ref=e318]:
+                                  - text: "0"
+                                  - generic [ref=e319]: ":"
+                                - generic [ref=e320]: "{"
+                              - generic [ref=e322]:
+                                - generic [ref=e323]:
+                                  - generic [ref=e324]:
+                                    - generic [ref=e325]:
+                                      - text: "\""
+                                      - generic [ref=e326]: title
+                                      - text: "\""
+                                    - generic [ref=e327]: ":"
+                                  - generic [ref=e330]: "\"AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week\""
+                                - generic [ref=e331]:
+                                  - generic [ref=e332]:
+                                    - generic [ref=e333]:
+                                      - text: "\""
+                                      - generic [ref=e334]: url
+                                      - text: "\""
+                                    - generic [ref=e335]: ":"
+                                  - generic [ref=e338]: "\"https://www.marketingweek.com/iab-uk-ai-ad-spend/\""
+                                - generic [ref=e339]:
+                                  - generic [ref=e340]:
+                                    - generic [ref=e341]:
+                                      - text: "\""
+                                      - generic [ref=e342]: source
+                                      - text: "\""
+                                    - generic [ref=e343]: ":"
+                                  - generic [ref=e346]: "\"marketingweek.com\""
+                                - generic [ref=e347]:
+                                  - generic [ref=e348]:
+                                    - generic [ref=e349]:
+                                      - text: "\""
+                                      - generic [ref=e350]: summary
+                                      - text: "\""
+                                    - generic [ref=e351]: ":"
+                                  - generic [ref=e354]: "\"# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.\""
+                                - generic [ref=e355]:
+                                  - generic [ref=e356]:
+                                    - generic [ref=e357]:
+                                      - text: "\""
+                                      - generic [ref=e358]: score
+                                      - text: "\""
+                                    - generic [ref=e359]: ":"
+                                  - generic [ref=e361] [cursor=pointer]: "0.3331999"
+                              - generic [ref=e363] [cursor=pointer]: "}"
+                            - generic [ref=e364]:
+                              - generic [ref=e366] [cursor=pointer]:
+                                - img [ref=e369]
+                                - generic [ref=e371]:
+                                  - text: "1"
+                                  - generic [ref=e372]: ":"
+                                - generic [ref=e373]: "{"
+                              - generic [ref=e375]:
+                                - generic [ref=e376]:
+                                  - generic [ref=e377]:
+                                    - generic [ref=e378]:
+                                      - text: "\""
+                                      - generic [ref=e379]: title
+                                      - text: "\""
+                                    - generic [ref=e380]: ":"
+                                  - generic [ref=e383]: "\"40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook\""
+                                - generic [ref=e384]:
+                                  - generic [ref=e385]:
+                                    - generic [ref=e386]:
+                                      - text: "\""
+                                      - generic [ref=e387]: url
+                                      - text: "\""
+                                    - generic [ref=e388]: ":"
+                                  - generic [ref=e391]: "\"https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver\""
+                                - generic [ref=e392]:
+                                  - generic [ref=e393]:
+                                    - generic [ref=e394]:
+                                      - text: "\""
+                                      - generic [ref=e395]: source
+                                      - text: "\""
+                                    - generic [ref=e396]: ":"
+                                  - generic [ref=e399]: "\"pitchbook.com\""
+                                - generic [ref=e400]:
+                                  - generic [ref=e401]:
+                                    - generic [ref=e402]:
+                                      - text: "\""
+                                      - generic [ref=e403]: summary
+                                      - text: "\""
+                                    - generic [ref=e404]: ":"
+                                  - generic [ref=e407]: "\"## The gap between AI spending and productivity gains “should be making executives uncomfortable,” a Bain report found. Corporates are beefing up their AI budgets but seeing lackluster productivity gains, according to the latest Bain & Company report. Bain’s Automation and AI Pathfinder Survey 2026, which had 951 respondents, found that 40% of the companies that tracked their spending recorded cost savings of less than 10% from their AI initiatives. Still, 90% of those surveyed whose AI investments underdelivered plan to increase their AI budgets next year. As compute and usage costs have risen dramatically, executives and shareholders are taking a closer look at the returns that those investments have brought so far. A PitchBook analysis of 186 AI-related questions on B2C earnings calls found that 90% were probing and investigative in tone, and that ROI and financial returns have overtaken product roadmaps as the dominant focus. Employees’ use of AI tools can range from coding assistants to AI-generated research to organizing unstructured databases.\""
+                                - generic [ref=e408]:
+                                  - generic [ref=e409]:
+                                    - generic [ref=e410]:
+                                      - text: "\""
+                                      - generic [ref=e411]: score
+                                      - text: "\""
+                                    - generic [ref=e412]: ":"
+                                  - generic [ref=e414] [cursor=pointer]: "0.26990628"
+                              - generic [ref=e416] [cursor=pointer]: "}"
+                            - generic [ref=e417]:
+                              - generic [ref=e419] [cursor=pointer]:
+                                - img [ref=e422]
+                                - generic [ref=e424]:
+                                  - text: "2"
+                                  - generic [ref=e425]: ":"
+                                - generic [ref=e426]: "{"
+                              - generic [ref=e428]:
+                                - generic [ref=e429]:
+                                  - generic [ref=e430]:
+                                    - generic [ref=e431]:
+                                      - text: "\""
+                                      - generic [ref=e432]: title
+                                      - text: "\""
+                                    - generic [ref=e433]: ":"
+                                  - generic [ref=e436]: "\"AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post\""
+                                - generic [ref=e437]:
+                                  - generic [ref=e438]:
+                                    - generic [ref=e439]:
+                                      - text: "\""
+                                      - generic [ref=e440]: url
+                                      - text: "\""
+                                    - generic [ref=e441]: ":"
+                                  - generic [ref=e444]: "\"https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/\""
+                                - generic [ref=e445]:
+                                  - generic [ref=e446]:
+                                    - generic [ref=e447]:
+                                      - text: "\""
+                                      - generic [ref=e448]: source
+                                      - text: "\""
+                                    - generic [ref=e449]: ":"
+                                  - generic [ref=e452]: "\"washingtonpost.com\""
+                                - generic [ref=e453]:
+                                  - generic [ref=e454]:
+                                    - generic [ref=e455]:
+                                      - text: "\""
+                                      - generic [ref=e456]: summary
+                                      - text: "\""
+                                    - generic [ref=e457]: ":"
+                                  - generic [ref=e460]: "\"AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.\""
+                                - generic [ref=e461]:
+                                  - generic [ref=e462]:
+                                    - generic [ref=e463]:
+                                      - text: "\""
+                                      - generic [ref=e464]: score
+                                      - text: "\""
+                                    - generic [ref=e465]: ":"
+                                  - generic [ref=e467] [cursor=pointer]: "0.23527569"
+                              - generic [ref=e469] [cursor=pointer]: "}"
+                            - generic [ref=e470]:
+                              - generic [ref=e472] [cursor=pointer]:
+                                - img [ref=e475]
+                                - generic [ref=e477]:
+                                  - text: "3"
+                                  - generic [ref=e478]: ":"
+                                - generic [ref=e479]: "{"
+                              - generic [ref=e481]:
+                                - generic [ref=e482]:
+                                  - generic [ref=e483]:
+                                    - generic [ref=e484]:
+                                      - text: "\""
+                                      - generic [ref=e485]: title
+                                      - text: "\""
+                                    - generic [ref=e486]: ":"
+                                  - generic [ref=e489]: "\"AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal\""
+                                - generic [ref=e490]:
+                                  - generic [ref=e491]:
+                                    - generic [ref=e492]:
+                                      - text: "\""
+                                      - generic [ref=e493]: url
+                                      - text: "\""
+                                    - generic [ref=e494]: ":"
+                                  - generic [ref=e497]: "\"https://www.insurancejournal.com/news/national/2026/06/01/871951.htm\""
+                                - generic [ref=e498]:
+                                  - generic [ref=e499]:
+                                    - generic [ref=e500]:
+                                      - text: "\""
+                                      - generic [ref=e501]: source
+                                      - text: "\""
+                                    - generic [ref=e502]: ":"
+                                  - generic [ref=e505]: "\"insurancejournal.com\""
+                                - generic [ref=e506]:
+                                  - generic [ref=e507]:
+                                    - generic [ref=e508]:
+                                      - text: "\""
+                                      - generic [ref=e509]: summary
+                                      - text: "\""
+                                    - generic [ref=e510]: ":"
+                                  - generic [ref=e513]: "\"The missed targets “should be making executives uncomfortable,” especially since many of them are approving increased spending for artificial intelligence on the basis of expected savings, the consulting firm said in a report shared exclusively with Bloomberg News. While some companies are funding fresh investment in generative and agentic AI with realized savings, the largest share (44%) cited targeted savings among their top sources of funding for the next wave of outlays, according to the report. “Despite a decade of investments in data modernization running well into hundreds of billions of dollars globally, the No. 1 reason AI programs underperform is that companies cannot reliably get access to their own data,” Bain said. Its prescription: Instead of waiting to structure all of their data to make it ingestible by AI, companies should start with what’s available to feed into the models — and then use AI to help sort out how to structure the rest.\""
+                                - generic [ref=e514]:
+                                  - generic [ref=e515]:
+                                    - generic [ref=e516]:
+                                      - text: "\""
+                                      - generic [ref=e517]: score
+                                      - text: "\""
+                                    - generic [ref=e518]: ":"
+                                  - generic [ref=e520] [cursor=pointer]: "0.22715242"
+                              - generic [ref=e522] [cursor=pointer]: "}"
+                            - generic [ref=e523]:
+                              - generic [ref=e525] [cursor=pointer]:
+                                - img [ref=e528]
+                                - generic [ref=e530]:
+                                  - text: "4"
+                                  - generic [ref=e531]: ":"
+                                - generic [ref=e532]: "{"
+                              - generic [ref=e534]:
+                                - generic [ref=e535]:
+                                  - generic [ref=e536]:
+                                    - generic [ref=e537]:
+                                      - text: "\""
+                                      - generic [ref=e538]: title
+                                      - text: "\""
+                                    - generic [ref=e539]: ":"
+                                  - generic [ref=e542]: "\"New Report: The AI Rebuild of Travel - Skift\""
+                                - generic [ref=e543]:
+                                  - generic [ref=e544]:
+                                    - generic [ref=e545]:
+                                      - text: "\""
+                                      - generic [ref=e546]: url
+                                      - text: "\""
+                                    - generic [ref=e547]: ":"
+                                  - generic [ref=e550]: "\"https://skift.com/insights/the-ai-rebuild-of-travel/\""
+                                - generic [ref=e551]:
+                                  - generic [ref=e552]:
+                                    - generic [ref=e553]:
+                                      - text: "\""
+                                      - generic [ref=e554]: source
+                                      - text: "\""
+                                    - generic [ref=e555]: ":"
+                                  - generic [ref=e558]: "\"skift.com\""
+                                - generic [ref=e559]:
+                                  - generic [ref=e560]:
+                                    - generic [ref=e561]:
+                                      - text: "\""
+                                      - generic [ref=e562]: summary
+                                      - text: "\""
+                                    - generic [ref=e563]: ":"
+                                  - generic [ref=e566]: "\"# New Report: The AI Rebuild of Travel. Travel technology is being rebuilt in real time as AI begins to shape how trips are discovered, booked, and managed. And systems built for websites and manual workflows are struggling to keep pace with a more connected, autonomous future. What once operated as a predictable digital journey is becoming an AI-mediated ecosystem powered by real-time data, interoperability, and increasingly intelligent systems. Skift Studio spoke with 10 senior technology, product, and digital leaders across airlines, hospitality companies, travel platforms, and technology providers to understand how the industry is preparing. One thing is clear: the next era of travel will be defined by infrastructure as much as interface. **Download the report to learn:**. * How AI assistants and agentic experiences are reshaping travel discovery and booking. * Why trust, governance, and identity are becoming central to AI-powered travel. * How airlines, hotels, and platforms are preparing for a more autonomous future.\""
+                                  - generic "Copy to clipboard" [ref=e590]:
+                                    - img [ref=e593] [cursor=pointer]
+                                - generic [ref=e567]:
+                                  - generic [ref=e568]:
+                                    - generic [ref=e569]:
+                                      - text: "\""
+                                      - generic [ref=e570]: score
+                                      - text: "\""
+                                    - generic [ref=e571]: ":"
+                                  - generic [ref=e573] [cursor=pointer]: "0.20429464"
+                              - generic [ref=e575] [cursor=pointer]: "}"
+                              - generic "Copy to clipboard" [ref=e597]:
+                                - img [ref=e600] [cursor=pointer]
+                          - generic [ref=e577] [cursor=pointer]: "]"
+                      - generic [ref=e579] [cursor=pointer]: "}"
+                      - generic "Copy to clipboard" [ref=e604]:
+                        - img [ref=e607] [cursor=pointer]
+                  - generic [ref=e581] [cursor=pointer]: "}"
+                  - generic "Copy to clipboard" [ref=e611]:
+                    - img [ref=e614] [cursor=pointer]
+        - generic [ref=e618]:
+          - generic [ref=e621]: face
+          - generic "Chat message from user" [ref=e622]:
+            - paragraph [ref=e628]: Lấy tweet mới nhất của người đó giúp mình
+        - generic [ref=e630]:
+          - generic [ref=e633]: smart_toy
+          - generic "Chat message from assistant" [ref=e634]:
+            - paragraph [ref=e643]: Đang xử lý...
+      - generic [ref=e95]:
+        - textbox "Nhập yêu cầu nghiên cứu..." [active] [ref=e99]
+        - button "Send message" [disabled] [ref=e101]:
+          - img [ref=e102]
