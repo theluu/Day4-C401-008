@@ -116,3 +116,13 @@ tools:
         max_pages: {type: integer, default: 5, description: "Số trang"}
         max_chars: {type: integer, default: 8000, description: "Số ký tự"}
       required: [arxiv_url]
+
+  - name: hackernews
+    description: "Search Hacker News stories and discussions. Use when user asks about tech news, startup news, developer discussions, or content from the HN community."
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Search keywords"}
+        max_results: {type: integer, default: 5, description: "Number of stories to return"}
+        sort: {type: string, enum: [relevance, date], default: "relevance", description: "relevance = best match, date = newest first"}
+      required: [query]
