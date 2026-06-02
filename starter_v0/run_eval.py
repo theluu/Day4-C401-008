@@ -356,7 +356,5 @@ def main() -> None:
     print_table(results, summary)
     print(f"\nArtifact version: {artifact_version.artifact_version}")
     print(f"\nSaved: {out_path}")
-
-
 if __name__ == "__main__":
     main()

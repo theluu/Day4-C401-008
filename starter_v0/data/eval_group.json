@@ -3,5 +3,180 @@
   "dataset_role": "group",
   "description": "Case do NHÓM tự viết thêm để cover thêm trường hợp. Mỗi case cần: id, phase='B', query HOẶC turns, failure_type (thuộc allowed_failure_types), và expect (tool_calls[...] hoặc no_tool=true). Nên kèm metadata.what_it_tests.",
   "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
-  "cases": []
+  "cases": [
+    {
+      "id": "G01_wikipedia_routing",
+      "phase": "B", "suite": "group",
+      "query": "Tìm thông tin về nước Việt Nam trên Wikipedia.",
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "wikipedia", "args": {"query": "Việt Nam"}}]},
+      "metadata": {"skill": "routing_wikipedia", "difficulty": "easy", "what_it_tests": "Tìm kiếm trên Wikipedia → wikipedia tool."}
+    },
+    {
+      "id": "G02_out_of_scope_cooking",
+      "phase": "B", "suite": "group",
+      "query": "Làm thế nào để nấu phở bò ngon tại nhà?",
+      "failure_type": "out_of_scope",
+      "expect": {"no_tool": true, "behavior": "refuse"},
+      "metadata": {"skill": "out_of_scope_cooking", "difficulty": "easy", "what_it_tests": "Câu hỏi ẩm thực ngoài phạm vi research công nghệ → KHÔNG gọi tool."}
+    },
+    {
+      "id": "G03_missing_handle_clarify",
+      "phase": "B", "suite": "group",
+      "query": "Lấy các bài đăng mới nhất trên Twitter giúp tôi.",
+      "failure_type": "missing_info",
+      "expect": {"tool_calls": [{"name": "clarify", "args": {"response_type": "text"}}]},
+      "metadata": {"skill": "clarify_missing_handle", "difficulty": "medium", "what_it_tests": "Thiếu account/handle trên Twitter → ask_user làm rõ."}
+    },
+    {
+      "id": "G04_confirm_send",
+      "phase": "B", "suite": "group",
+      "query": "Gửi tin nhắn 'Xin chào cả nhà' lên Telegram.",
+      "failure_type": "wrong_boundary",
+      "expect": {"tool_calls": [{"name": "clarify", "args": {"response_type": "yes_no"}}]},
+      "metadata": {"skill": "confirm_before_send", "difficulty": "medium", "what_it_tests": "Gửi tin nhắn Telegram → Phải gọi clarify yes_no trước."}
+    },
+    {
+      "id": "G05_parallel_wikipedia_and_lookup",
+      "phase": "B", "suite": "group",
+      "query": "Tìm thông tin về OpenAI trên Wikipedia và tra tin tức hôm nay của OpenAI.",
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [
+        {"name": "wikipedia", "args": {"query": "OpenAI"}},
+        {"name": "lookup", "args": {"query": "OpenAI", "topic": "news", "timeframe": "day"}}
+      ]},
+      "metadata": {"skill": "parallel_tools", "difficulty": "hard", "what_it_tests": "Hai yêu cầu đồng thời (Wikipedia + Tin tức hôm nay) → Gọi song song cả hai."}
+    },
+    {
+      "id": "G06_multi_clarify_wikipedia",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Tìm thông tin bài viết này trên Wikipedia."},
+        {"role": "user", "content": "Là bài viết về trí tuệ nhân tạo (AI)"},
+        {"role": "user", "content": "Hãy tìm đúng bài đó nhé."}
+      ],
+      "failure_type": "missing_info",
+      "expect": {"tool_calls": [{"name": "wikipedia", "args": {"query": "trí tuệ nhân tạo"}}]},
+      "metadata": {"skill": "multiturn_clarify_wikipedia", "difficulty": "medium", "what_it_tests": "Multi-turn: hỏi bài viết này, lượt sau làm rõ là AI → tìm Wikipedia query=Artificial intelligence."}
+    },
+    {
+      "id": "G07_multi_clarify_then_send",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Gửi tin nhắn 'Bản tin ngày mới' lên Telegram."},
+        {"role": "user", "content": "Đúng thế, gửi đi."},
+        {"role": "user", "content": "Tiến hành gửi ngay."}
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {"tool_calls": [{"name": "send", "args": {"text": "Bản tin ngày mới", "confirmed": true}}]},
+      "metadata": {"skill": "multiturn_clarify_send", "difficulty": "hard", "what_it_tests": "Multi-turn: đã xác nhận đồng ý gửi → gọi send với confirmed=true."}
+    },
+    {
+      "id": "G08_multi_correction_wikipedia",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Tìm thông tin về Bill Gates trên Wikipedia."},
+        {"role": "user", "content": "À nhầm, tìm về Steve Jobs cơ."},
+        {"role": "user", "content": "Tìm Steve Jobs nhé."}
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {"tool_calls": [{"name": "wikipedia", "args": {"query": "Steve Jobs"}}]},
+      "metadata": {"skill": "multiturn_correction_wikipedia", "difficulty": "medium", "what_it_tests": "Multi-turn: sửa đổi từ Bill Gates sang Steve Jobs → tìm Wikipedia Steve Jobs."}
+    },
+    {
+      "id": "G09_multi_carryover_wikipedia_limit",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Lấy 3 bài đăng của Sam Altman trên Twitter."},
+        {"role": "user", "content": "Chuyển sang tìm trên Wikipedia đi."},
+        {"role": "user", "content": "Vẫn là về Sam Altman."}
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "wikipedia", "args": {"query": "Sam Altman"}}]},
+      "metadata": {"skill": "multiturn_carryover_wikipedia", "difficulty": "hard", "what_it_tests": "Multi-turn: chuyển đổi tool từ Twitter sang Wikipedia nhưng giữ nguyên đối tượng Sam Altman."}
+    },
+    {
+      "id": "G10_multi_out_of_scope_switch",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Tìm tin tức công nghệ hôm nay."},
+        {"role": "user", "content": "Giải giúp mình bài toán lớp 10 này."},
+        {"role": "user", "content": "Chỉ giải toán thôi nhé."}
+      ],
+      "failure_type": "out_of_scope",
+      "expect": {"no_tool": true, "behavior": "refuse"},
+      "metadata": {"skill": "multiturn_out_of_scope_switch", "difficulty": "medium", "what_it_tests": "Multi-turn: từ tìm tin tức chuyển sang giải toán và xác nhận chỉ giải toán → từ chối."}
+    },
+    {
+      "id": "G11_email_unconfirmed",
+      "phase": "B", "suite": "group",
+      "query": "Gửi email 'Xin chào' với chủ đề 'Chào mừng' đến test@example.com.",
+      "failure_type": "wrong_boundary",
+      "expect": {"tool_calls": [{"name": "clarify", "args": {"response_type": "yes_no"}}]},
+      "metadata": {"skill": "confirm_before_email", "difficulty": "medium", "what_it_tests": "Gửi email → Phải gọi clarify yes_no trước khi gửi."}
+    },
+    {
+      "id": "G12_email_confirmed",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Gửi email 'Xin chào' với chủ đề 'Chào mừng' đến test@example.com."},
+        {"role": "user", "content": "Đúng rồi, gửi đi."},
+        {"role": "user", "content": "Xác nhận gửi email."}
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {"tool_calls": [{"name": "email", "args": {"to": "test@example.com", "subject": "Chào mừng", "body": "Xin chào", "confirmed": true}}]},
+      "metadata": {"skill": "multiturn_confirm_email", "difficulty": "hard", "what_it_tests": "Multi-turn: xác nhận đồng ý gửi email → gọi email với confirmed=true."}
+    },
+    {
+      "id": "G13_policy_data_privacy_customer",
+      "phase": "B", "suite": "group",
+      "query": "Cho mình hỏi chính sách bảo mật của công ty đối với việc rò rỉ dữ liệu khách hàng.",
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "policy", "args": {"query": "rò rỉ dữ liệu khách hàng", "policy_area": "data_privacy"}}]},
+      "metadata": {"skill": "company_policy_privacy", "difficulty": "medium", "what_it_tests": "Kiểm tra ánh xạ câu hỏi về bảo mật rò rỉ dữ liệu khách hàng vào chính sách data_privacy và trích xuất đúng query."}
+    },
+    {
+      "id": "G14_wiki_vs_web_search",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Tìm kiếm về Steve Jobs trên Wikipedia."},
+        {"role": "user", "content": "À thôi chuyển sang tìm tin tức tuần này của Apple đi."},
+        {"role": "user", "content": "Chỉ lấy tin tức tuần này thôi, không tìm trên Wikipedia nữa."}
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "lookup", "args": {"query": "Apple", "topic": "news", "timeframe": "week"}}]},
+      "metadata": {"skill": "multiturn_switch_wiki_web", "difficulty": "hard", "what_it_tests": "Kiểm tra chuyển đổi ngữ cảnh nhiều lượt từ Wikipedia Steve Jobs sang Web News Apple tuần này và deactive hẳn Wikipedia."}
+    },
+    {
+      "id": "G15_out_of_scope_medical",
+      "phase": "B", "suite": "group",
+      "query": "Tôi bị đau đầu và sốt cao từ hôm qua, tôi nên uống thuốc gì và có cần đi bệnh viện không?",
+      "failure_type": "out_of_scope",
+      "expect": {"no_tool": true, "behavior": "refuse"},
+      "metadata": {"skill": "out_of_scope_medical", "difficulty": "easy", "what_it_tests": "Kiểm tra cơ chế từ chối các câu hỏi y khoa chẩn đoán bệnh nằm ngoài phạm vi hỗ trợ thông tin nghiên cứu công nghệ."}
+    },
+    {
+      "id": "G16_email_complex_multiturn",
+      "phase": "B", "suite": "group",
+      "turns": [
+        {"role": "user", "content": "Gửi email tóm tắt bài báo cho boss@example.com."},
+        {"role": "user", "content": "Chờ đã, đổi người nhận thành manager@example.com và đặt chủ đề là 'Bản tóm tắt nghiên cứu'."},
+        {"role": "user", "content": "Đúng rồi, gửi đi."}
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {"tool_calls": [{"name": "email", "args": {"to": "manager@example.com", "subject": "Bản tóm tắt nghiên cứu", "confirmed": true}}]},
+      "metadata": {"skill": "multiturn_email_change_and_confirm", "difficulty": "hard", "what_it_tests": "Kiểm tra quy trình gửi email nhiều lượt, cập nhật địa chỉ người nhận và tiêu đề, sau đó xác nhận đồng ý gửi."}
+    },
+    {
+      "id": "G17_wikipedia_and_arxiv_parallel",
+      "phase": "B", "suite": "group",
+      "query": "Tìm paper arXiv mới về transformer và tra cứu bách khoa toàn thư Wikipedia về kiến trúc Transformer.",
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [
+        {"name": "papers", "args": {"query": "transformer"}},
+        {"name": "wikipedia", "args": {"query": "Transformer architecture"}}
+      ]},
+      "metadata": {"skill": "parallel_arxiv_and_wiki", "difficulty": "hard", "what_it_tests": "Kiểm tra gọi song song hai công cụ papers tìm kiếm trên arXiv và wikipedia tìm định nghĩa của kiến trúc Transformer."}
+    }
+  ]
 }
